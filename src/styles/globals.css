@@ -81,12 +81,27 @@ body {
   };
   span>span:nth-child(2) {
     font-family: "Playfair" !important;
-    /* color: red !important; */
     font-weight: 900 !important;
     font-size: 2rem;
   }
 }
 
+.typewriter1{
+  span{
+    font-family: "Playfair", serif !important;
+    font-style: italic;
+    font-weight: bolder !important;
+    color: black !important;
+
+  };
+  span>span:nth-child(2) {
+    font-family: "Playfair" !important;
+    font-weight: 900 !important;
+    font-size: 2rem;
+  }
+}
+
+/* color: red !important; */
 /* @-moz-keyframes myship{
   from {left: 480px;} 
   to{left:20px;} 

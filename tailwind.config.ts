@@ -20,6 +20,7 @@ const config: Config = {
       accenColor: "#9DCE0E",
       wedding: "#ede8dc",
       weddingText: "#dfbd86",
+      baptism: "#b2574b",
     },
     extend: {
       grayscale: {
@@ -42,6 +43,7 @@ const config: Config = {
       boxShadow: {
         '3xl': '0 35px 60px -15px rgba(0, 0, 0, 0.3)',
         'inner1': ' inset 0 0px 20px rgba(0, 0, 0, 0.3)',
+        'xxxl': '0 35px 60px -15px rgba(0, 0, 0, 0.3)',
       }
     },
   },
