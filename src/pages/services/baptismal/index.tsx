@@ -1,9 +1,9 @@
+"use client"
 import React from "react";
 import MyTypewrite from "@/components/typewrite/typewriter";
 import Image from "next/image";
 import { SimpleSlider } from "@/components/carousel/carouselfortext";
 
-const images = ["church.jpg", "church1.jpg", "church2.jpg", "church3.jpg"];
 const bandp = [
   {
     title: "One Baptism recognised by All",
@@ -29,6 +29,24 @@ const bandp = [
     title: "An alternative to baptism for your child",
     content:
       "Act of Thanksgiving after the Birth or Adoption. Some individuals opt for this ceremony to express gratitude and celebrate the arrival or adoption of their child without undergoing the traditional baptismal rite.",
+  },
+];
+
+const candp = [
+  {
+    title: "Holy Communion (Sacrament)",
+    content:
+      "To replace any placeholder text (such as this), just click it and start typing. We think this paragraph makes a great statement just as it is. But if you'd like to try a bit of customizing to make it your own, you can change the fonts with just a click.",
+  },
+  {
+    title: "Early Morning Communion",
+    content:
+      "To replace any placeholder text (such as this), just click it and start typing. We think this paragraph makes a great statement just as it is. But if you’d like to try a bit of customizing to make it your own, you can change the fonts with just a click.",
+  },
+  {
+    title: "Weekday Communion",
+    content:
+      "To replace any placeholder text (such as this), just click it and start typing. We think this paragraph makes a great statement just as it is. But if you’d like to try a it of customizing to make it your own, you can change the fonts with just a click.",
   },
 ];
 
@@ -64,7 +82,7 @@ const Index = () => {
         </div>
       </div>
 
-      {/* ==================== Introductory Image For Baptism ================== */}
+      {/* ==================== Baptism Section with slider  ================== */}
       <div className=" my-10 ">
         <div className="container m-auto ">
           <div>
@@ -105,28 +123,34 @@ const Index = () => {
         </div>
       </div>
 
-      {/* ==================== Introductory Image For Baptism ================== */}
+      {/* ==================== Introductory Image For Communion ================== */}
       <div className=" my-[2.4rem] ">
-        <div className=" max-lg:w-[100vw] container bg-[url('/images/CommunionSunday.png')] max-lg:bg-[url('/images/csdp.png')] h-[700px] bg-cover lg:m-auto bg-center ">
-          <div className=" lg:hidden m-auto  ">{/* I&apos;m   */}</div>
+        <div className=" max-lg:w-[100vw] max-lg:sm:h-[500px] lg:container bg-[url('/images/csd2.png')] max-sm:bg-[url('/images/csdp.png')] h-[700px] bg-cover lg:m-auto bg-center ">
+          {/* <div className=" lg:hidden m-auto  ">I&apos;m  </div> */}
         </div>
         <div className=" container m-auto ">
-          <div className="m-auto text-center text-textColor bg-baptism2 min-h-[15rem] max-w-[40rem] -mt-[7.5rem] ">
+          <div className="m-auto text-center text-textColor bg-baptism2 min-h-[15rem] max-w-[40rem] md:-mt-[7.5rem]  ">
             <div className=" m-auto w-full h-full py-[10%]  ">
-              <p className=" font-kalnia font-bold text-[1.5rem] ">&quot;I WILL ALWAYS BE WITH YOU&quot;</p>
-              <p className=" font-playfair font-extrabold text-[2.5rem] ">&apos;Do This in Remembrance of Me&apos;</p>
-              <p className=" font-playfair italic text-[1.2rem] ">Matthew 26:17 - 30</p>
+              <p className=" font-kalnia font-bold text-[1.5rem] ">
+                &quot;I WILL ALWAYS BE WITH YOU&quot;
+              </p>
+              <p className=" font-playfair font-extrabold text-[2.5rem] ">
+                &apos;Do This in Remembrance of Me&apos;
+              </p>
+              <p className=" font-playfair italic text-[1.2rem] ">
+                Matthew 26:17 - 30
+              </p>
             </div>
           </div>
         </div>
       </div>
 
-            {/* ==================== Introductory Image For Baptism ================== */}
-            <div className=" my-10 ">
+      {/* ====================  Communion Section with Slider  ================== */}
+      <div className=" my-10 ">
         <div className="container m-auto ">
-          <div>
+        <div>
             <p className="  m-auto text-center py-8 font-kalnia text-[2.2rem] ">
-              Types of Baptism & Confirmation
+            Holy Communion Services 
             </p>
           </div>
           <div className="flex max-lg:flex-col ">
@@ -134,7 +158,7 @@ const Index = () => {
               <div className=" m-auto w-[100%] ">
                 <Image
                   className="  m-auto rounded-sm w-[70%] max-md:w-[100%] "
-                  src={"/images/jesus.png"}
+                  src={"/images/mary1.png"}
                   alt=""
                   width={200}
                   height={100}
@@ -144,24 +168,12 @@ const Index = () => {
             </div>
             <div className=" lg:w-[60%] px-2 text-textColor m-auto max-w-[90%] -z-20 ">
               <div className=" max-w-[90%] max-lg:max-w-[98%] ">
-                <SimpleSlider bandp={bandp} sliderButton={true} />
+                <SimpleSlider bandp={candp} sliderButton={true} />
               </div>
-
-              {/* <div className=" m-auto justify-center shadow-2xl p-10 ">
-                <p className=" font-playfair text-[2rem] m-auto max-md:text-center py-8   ">
-                  One Baptism recognised by All
-                </p>
-                <p className=" font-opensans font-medium text-[1.3rem] text-justify ">
-                  There exists one universally recognized baptism acknowledged
-                  by mainstream Churches, including the Methodist Church and the
-                  Church of England, that administer infant baptisms.
-                </p>
-              </div> */}
             </div>
           </div>
         </div>
       </div>
-      
     </div>
   );
 };
