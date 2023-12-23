@@ -4,6 +4,33 @@ import Image from "next/image";
 import { SimpleSlider } from "@/components/carousel/carouselfortext";
 
 const images = ["church.jpg", "church1.jpg", "church2.jpg", "church3.jpg"];
+const bandp = [
+  {
+    title: "One Baptism recognised by All",
+    content:
+      "There exists one universally recognized baptism acknowledged by mainstream Churches, including the Methodist Church and  the Church of England, that administer infant baptisms. ",
+  },
+  {
+    title: "Confirmation and Reception into Memebership",
+    content:
+      "Following infant baptism in the Methodist Church, the natural progression involves Confirmation and Reception into Membership. This step signifies an individual's personal commitment to Christian discipleship and their desire to actively participate in the life of the Church.",
+  },
+  {
+    title: "Baptism followed by confirmation and Reception ",
+    content:
+      "If an individual, baptized as an infant, returns to the Methodist Church, it typically involves Confirmation and Reception into Membership. This process allows them to fully engage in Christian discipleship and contribute actively to the Church's community life. ",
+  },
+  {
+    title: "No Difference with Church of England",
+    content:
+      "The understanding of Confirmation is consistent between the Methodist Church and the Church of England. However, it's worth noting that the Church of England lacks a strong emphasis on membership, such as transferring membership when relocating to a new area. ",
+  },
+  {
+    title: "An alternative to baptism for your child",
+    content:
+      "Act of Thanksgiving after the Birth or Adoption. Some individuals opt for this ceremony to express gratitude and celebrate the arrival or adoption of their child without undergoing the traditional baptismal rite.",
+  },
+];
 
 const list = ["The Holy Spirit"];
 const Index = () => {
@@ -58,8 +85,10 @@ const Index = () => {
                 />
               </div>
             </div>
-            <div className=" lg:w-[60%] px-2 text-textColor m-auto ">
-              <SimpleSlider pics={images} sliderButton={true} />
+            <div className=" lg:w-[60%] px-2 text-textColor m-auto max-w-[90%] -z-20 ">
+              <div className=" max-w-[90%] max-lg:max-w-[98%] ">
+                <SimpleSlider bandp={bandp} sliderButton={true} />
+              </div>
 
               {/* <div className=" m-auto justify-center shadow-2xl p-10 ">
                 <p className=" font-playfair text-[2rem] m-auto max-md:text-center py-8   ">
@@ -77,11 +106,62 @@ const Index = () => {
       </div>
 
       {/* ==================== Introductory Image For Baptism ================== */}
-      <div>
-        <div>
-          {/* <SimpleSlider pics={images} sliderButton={true} /> */}
+      <div className=" my-[2.4rem] ">
+        <div className=" max-lg:w-[100vw] container bg-[url('/images/CommunionSunday.png')] max-lg:bg-[url('/images/csdp.png')] h-[700px] bg-cover lg:m-auto bg-center ">
+          <div className=" lg:hidden m-auto  ">{/* I&apos;m   */}</div>
+        </div>
+        <div className=" container m-auto ">
+          <div className="m-auto text-center text-textColor bg-baptism2 min-h-[15rem] max-w-[40rem] -mt-[7.5rem] ">
+            <div className=" m-auto w-full h-full py-[10%]  ">
+              <p className=" font-kalnia font-bold text-[1.5rem] ">&quot;I WILL ALWAYS BE WITH YOU&quot;</p>
+              <p className=" font-playfair font-extrabold text-[2.5rem] ">&apos;Do This in Remembrance of Me&apos;</p>
+              <p className=" font-playfair italic text-[1.2rem] ">Matthew 26:17 - 30</p>
+            </div>
+          </div>
         </div>
       </div>
+
+            {/* ==================== Introductory Image For Baptism ================== */}
+            <div className=" my-10 ">
+        <div className="container m-auto ">
+          <div>
+            <p className="  m-auto text-center py-8 font-kalnia text-[2.2rem] ">
+              Types of Baptism & Confirmation
+            </p>
+          </div>
+          <div className="flex max-lg:flex-col ">
+            <div className=" lg:w-[40%] m-auto ">
+              <div className=" m-auto w-[100%] ">
+                <Image
+                  className="  m-auto rounded-sm w-[70%] max-md:w-[100%] "
+                  src={"/images/jesus.png"}
+                  alt=""
+                  width={200}
+                  height={100}
+                  quality={100}
+                />
+              </div>
+            </div>
+            <div className=" lg:w-[60%] px-2 text-textColor m-auto max-w-[90%] -z-20 ">
+              <div className=" max-w-[90%] max-lg:max-w-[98%] ">
+                <SimpleSlider bandp={bandp} sliderButton={true} />
+              </div>
+
+              {/* <div className=" m-auto justify-center shadow-2xl p-10 ">
+                <p className=" font-playfair text-[2rem] m-auto max-md:text-center py-8   ">
+                  One Baptism recognised by All
+                </p>
+                <p className=" font-opensans font-medium text-[1.3rem] text-justify ">
+                  There exists one universally recognized baptism acknowledged
+                  by mainstream Churches, including the Methodist Church and the
+                  Church of England, that administer infant baptisms.
+                </p>
+              </div> */}
+            </div>
+          </div>
+        </div>
+      </div>
+      
     </div>
   );
 };

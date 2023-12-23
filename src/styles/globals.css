@@ -75,7 +75,7 @@ body {
   }
 }
 
-.typewriter{
+/* .typewriter{
   span{
     font-family: "Kalnia", serif;
   };
@@ -84,9 +84,20 @@ body {
     font-weight: 900 !important;
     font-size: 2rem;
   }
+} */
+
+.typewriter span {
+  font-family: "Kalnia", serif;
 }
 
-.typewriter1{
+.typewriter span > span:nth-child(2) {
+  font-family: "Playfair" !important;
+  font-weight: 900 !important;
+  font-size: 2rem;
+}
+
+
+/* .typewriter1{
   span{
     font-family: "Playfair", serif !important;
     font-style: italic;
@@ -99,6 +110,23 @@ body {
     font-weight: 900 !important;
     font-size: 2rem;
   }
+} */
+
+.typewriter1 span {
+  font-family: "Playfair", serif !important;
+  font-style: italic;
+  font-weight: bolder !important;
+  color: black !important;
+}
+
+.typewriter1 span > span:nth-child(2) {
+  font-family: "Playfair" !important;
+  font-weight: 900 !important;
+  font-size: 2rem;
+}
+
+.carousel>div {
+  box-shadow: '0 35px 60px -15px rgba(0, 0, 0, 0.3)' !important;
 }
 
 /* color: red !important; */

@@ -21,6 +21,7 @@ const config: Config = {
       wedding: "#ede8dc",
       weddingText: "#dfbd86",
       baptism: "#b2574b",
+      baptism2: "#f9ecde",
     },
     extend: {
       grayscale: {
