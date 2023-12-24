@@ -13,7 +13,7 @@ export const MultipleItems = () => {
     centerMode: true,
     autoplay: true,
     autoplaySpeed: 4500,
-    className: " m-auto flex justify-center  ",
+    className: " ",
     responsive: [
       //   {
       //     breakpoint: 1024,
@@ -45,6 +45,22 @@ export const MultipleItems = () => {
     <div className=" max-w-[100%] m-auto justify-center ">
       <h2 className="text-center"> Multiple items </h2>
       <Slider {...settings}>
+        <div>
+          <div className=" min-w-[10rem]  ">
+            <div>
+              <iframe
+                className="w-full h-full "
+                width="100%"
+                height=""
+                src="https://www.youtube.com/embed/tDFy_NlB_Sw"
+                title="RMC Sunday Worship 19th November 2023"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowFullScreen
+              ></iframe>
+            </div>
+          </div>
+        </div>
         <div>
           <div className=" min-w-[10rem]  ">
             <div>

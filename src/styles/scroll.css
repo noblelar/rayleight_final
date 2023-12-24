@@ -1,0 +1,48 @@
+:root {
+  --primaryColor: #cd0e2ec5;
+  --white: #ffffffee;
+  --textColor: #00000090;
+  --secondaryColor: #1e82b09e;
+  --accenColor: #9dce0e;
+  --wedding: #ede8dc;
+  --weddingText: #dfbd86bf;
+  --baptism: #b2574bbd;
+  --baptism2: #f9ecded8;
+}
+
+/* .my_header {
+   background-color: var(--backgroundColor);
+ } */
+
+section[data-theme="black"] {
+  --backgroundColor: #000;
+}
+
+.white {
+   /* --backgroundColor: var(--white); */
+   /* --header-text-color: var(--header-white-text-color); */
+   background: rgba(255, 255, 255, 0.733);
+}
+
+.black {
+   /* --backgroundColor: var(--white); */
+   /* --header-text-color: var(--header-black-text-color); */
+   background: rgba(255, 255, 255, 0);
+}
+
+.sec{
+   background: var(--secondaryColor);
+
+   /* --backgroundColor: var(--secondaryColor); */
+}
+
+.foot{
+   background: var(--textColor);
+
+}
+
+.wed{
+   background: var(--secondaryColor);
+
+}
+

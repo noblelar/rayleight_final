@@ -19,7 +19,7 @@ const Footer = () => {
 
 
   return (
-    <div className=" bg-textColor/25 ">
+    <section data-theme="foot" className=" bg-textColor/25 ">
       <div className=" flex justify-center w-full shadow-lg">
         <div className="container">
           <div className="flex max-lg:flex-col ">
@@ -124,7 +124,7 @@ const Footer = () => {
       <div className="container justify-center text-center pb-5 m-auto font-bold md:pt-10c">
           &copy; {tDate.getFullYear()} Rayleigh Methodist Church
         </div>
-    </div>
+    </section>
   );
 };
 

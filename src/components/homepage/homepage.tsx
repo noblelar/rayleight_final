@@ -6,15 +6,17 @@ import Image from "next/image";
 
 const HomePage = () => {
   return (
-    <div className="flex flex-col justify-center">
+    <div className="flex flex-col justify-center"  >
       {/* ==================== Introductory Image Area ========= */}
-      <div className=" bg-[url('/images/one.jpeg')] xl:h-[90vh] h-[90vh] w-full bg-cover  top-0 -z-20 bg-no-repeat -mt-[8rem] ">
+      <section data-theme="black"  className=" bg-[url('/images/one.jpeg')] xl:h-[90vh] h-[90vh] w-full bg-cover  top-0 -z-20 bg-no-repeat -mt-[8rem] " >
         <div className=" flex justify-center justify-items-center h-[100%] w-[] ">
           <div className=" m-auto text-backgroundColor  "> God is Good </div>
         </div>
-      </div>
+      </section>
+
       {/* ============= Bible Verese Area ============= */}
-      <div>
+      <section data-theme="white" >
+        
         <div className="flex justify-center">
           <div className="container">
             <div className=" max-w-500px px-4 my-8  lg:max-w-[75%] m-auto md:-mt-[3rem] bg-backgroundColor shadow-lg p-6 rounded-lg ">
@@ -38,9 +40,9 @@ const HomePage = () => {
             </div>
           </div>
         </div>
-      </div>
+      </section>
       {/* ================== Upcoming Events ============= */}
-      <div className=" bg-secondaryColor/80 mb-4 pb-12 ">
+      <section data-theme="sec" className=" bg-secondaryColor/80 mb-4 pb-12 ">
         <div className="container text-textColor m-auto ">
           <div className=" flex flex-col justify-center min-h-[20rem] m-auto ">
             <div className=" font-playfair font-bold text-center mt-[3rem] text-[2rem] text-backgroundColor ">
@@ -51,10 +53,10 @@ const HomePage = () => {
             <UpEvent />
           </div>
         </div>
-      </div>
+      </section>
 
       {/* ================== You Tube Channel ================== */}
-      <div className=" my-8 text-textColor  ">
+      <section data-theme="white" className=" my-8 text-textColor  ">
         <div className="container m-auto ">
           <div className=" m-auto text-center p-6 font-semibold font-kalnia text-[1.5rem] ">
             Check Out Rayleigh Methodist Church&apos;s <br /> Youtube Channel
@@ -89,19 +91,19 @@ const HomePage = () => {
             </div>
           </div>
         </div>
-      </div>
+      </section>
 
       {/* ================== Youtube Carousel =============== */}
-      <div className=" my-[5rem] ">
+      <section data-theme="white" className=" my-[5rem] ">
         <div className="container m-auto  ">
           <div className=" m-auto flex justify-center ">
             <MultipleItems />
           </div>
         </div>
-      </div>
+      </section>
 
       {/* =================== Christmas Celebration ================ */}
-      <div className=" my-[2rem] mb-[10rem] max-lg:mb-8 ">
+      <section data-theme="white" className=" my-[2rem] mb-[10rem] max-lg:mb-8 ">
         <div className="container m-auto ">
           <div className="lg:flex justify-between">
             <div className="lg:w-[50%] text-textColor ">
@@ -123,7 +125,7 @@ const HomePage = () => {
             </div>
           </div>
         </div>
-      </div>
+      </section>
     </div>
   );
 };

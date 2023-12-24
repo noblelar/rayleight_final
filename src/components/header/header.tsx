@@ -5,36 +5,25 @@ import NavBut from "./navigation/navbut";
 import { menuItems } from "../utils";
 import Search from "../buttons/search";
 import { useState, useEffect, useRef } from "react";
-import { FadeInAnimation } from "./navigation/animation";
-import Subnav from "./navigation/subnav";
-// import { MenuToggle } from "./gennav/MenuToggle";
-// import { useState, useEffect } from "react";
-import { useAnimate, stagger } from "framer-motion";
-
-// import { Menu } from "./gennav/Menu";
 import App from "./gennav/app";
+import { useStore } from "@/store/store";
 
-const Header = ({ colorA }: { colorA: Boolean }) => {
+const Header = () => {
+  const theme = useStore((store) => store.theme);
   const [navbarOpen, setNavbarOpen] = useState(false);
   function handleNavbarToggle() {
     setNavbarOpen(!navbarOpen);
   }
   const ref = useRef(null);
 
-  // useEffect(() => {
-  //   const animation = new FadeInAnimation(ref.current);
-  //   animation.start(1000);
-  //   return () => {
-  //     animation.stop();
-  //   };
-  // }, [navbarOpen]);
+  useEffect(() => {
+    console.log(theme);
+  }, [theme]);
 
   return (
-    <header className=" !sticky !-top-1 ">
+    <header className={` !sticky !-top-1 ${theme} `}>
       <div
-        className={`flex justify-center w-full shadow-lg ${
-          colorA ? " " : " bg- "
-        } `}
+        className={`flex justify-center w-full shadow-lg my_header ${theme} `}
       >
         <div className="container ">
           <div className="flex ">
@@ -124,7 +113,14 @@ const Header = ({ colorA }: { colorA: Boolean }) => {
           <ul className="block lg:space-x-3 ml-[20%] text-center m-auto my-[20%] ">
             {menuItems.map((menuItem, i) => {
               if (!menuItem.submenuof) {
-                return <NavBut key={i} menu={menuItem} idNumber={i} toggle={()=>ToggleEvent} />;
+                return (
+                  <NavBut
+                    key={i}
+                    menu={menuItem}
+                    idNumber={i}
+                    toggle={() => ToggleEvent}
+                  />
+                );
               }
             })}
           </ul>
