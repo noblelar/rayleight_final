@@ -11,15 +11,16 @@ import {
 import Button from "@/components/buttons/submit";
 import Faq from "./faq";
 import Join from "./join";
+import MyMap from "./map";
 
 const Index = () => {
   return (
     <section className=" min-h-[500px] m-auto ">
       <section
         data-theme="white"
-        className=" container bg-[url('/images/contactbg.png')] min-h-[150vh] bg-cover m-auto bg-center "
+        className=" container bg-[url('/images/contactbg.png')] min-h-[120vh] bg-cover m-auto bg-center "
       >
-        <div className="flex max-md:flex-col py-[2rem]  ">
+        <div className="flex max-lg:flex-col py-[2rem]  ">
           <div className=" lg:w-[50%] ">
             <div className=" font-playfair font-extrabold text-center text-[2rem] ">
               Contact Forms
@@ -227,10 +228,19 @@ const Index = () => {
 
       {/* ================== Joining News Letter Section =================  */}
       <section className=" w-full m-auto ">
-        <section className="container bg-cover m-auto bg-center w-full " >
+        <section className="container  m-auto w-full " >
           <Join />
         </section>
       </section>
+
+      {/* ============== Other Locations (Map) Sections  ========= */}
+      <section className=" w-full m-auto ">
+        <section className=" container w-full m-auto ">
+          <MyMap/>
+        </section>
+      </section>
+
+
     </section>
   );
 };

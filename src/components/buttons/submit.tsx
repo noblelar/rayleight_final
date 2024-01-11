@@ -13,7 +13,7 @@ function Button({
 }) {
   return (
     <button
-      type={a_type != null ? a_type : undefined}
+      type={a_type != null ? a_type : "submit" }
       className={`rounded-md bg-${bgcolor} py-4 px-9 text-base font-medium text-backgroundColor transition duration-300 ease-in-out hover:shadow-signUp ${classN} `}
       onClick={onClick}
     >
