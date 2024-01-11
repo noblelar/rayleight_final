@@ -10,6 +10,7 @@ import {
 } from "react-icons/fa";
 import Button from "@/components/buttons/submit";
 import Faq from "./faq";
+import Join from "./join";
 
 const Index = () => {
   return (
@@ -222,6 +223,13 @@ const Index = () => {
         </div>
 
         <Faq />
+      </section>
+
+      {/* ================== Joining News Letter Section =================  */}
+      <section className=" w-full m-auto ">
+        <section className="container bg-cover m-auto bg-center w-full " >
+          <Join />
+        </section>
       </section>
     </section>
   );
