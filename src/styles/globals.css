@@ -33,6 +33,7 @@ body {
   background: none;
   font-family: "Manrope", sans-serif;
   color: black;
+  overflow-x: hidden;
 }
 
 * {
