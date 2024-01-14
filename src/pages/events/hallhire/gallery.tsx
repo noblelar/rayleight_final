@@ -1,10 +1,14 @@
-import Image from "next/image";
-import React from "react";
 
-const ServicesA = ( { image, title, text } : {key: any, image: string, title: string, text: string} ) => {
+
+
+import React from 'react';
+import Image from 'next/image';
+
+const Gallery = ({ image , title }: { image:string, title:string }) => {
    let imm = "/images/"+image;
   return (
-    <div className="m-auto my-8 " >
+    <div>
+       <div className="m-auto my-8 " >
       <div className=" max-lg:mx-4 ">
         <div>
           <Image
@@ -20,13 +24,12 @@ const ServicesA = ( { image, title, text } : {key: any, image: string, title: st
           <p className=" font-playfair text-[1.3rem] font-extrabold text-center p-2 ">
             {title}
           </p>
-          <p className=" text-justify m-auto w-[95%] ">
-            {text}
-          </p>
+        
         </div>
       </div>
     </div>
-  );
-};
+    </div>
+  )
+}
 
-export default ServicesA;
+export default Gallery

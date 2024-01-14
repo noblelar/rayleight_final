@@ -38,7 +38,7 @@ const callCarouselItems = () => {
 }
 
 
-export default class CenterMode extends Component {
+export default class Galleries extends Component {
 
 
   render() {

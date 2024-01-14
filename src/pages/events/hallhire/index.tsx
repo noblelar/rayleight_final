@@ -4,13 +4,15 @@ import Link from 'next/link'
 import React from 'react'
 import ServicesA from './services'
 import CenterMode from './ssSlick'
+import SerAbout from './serabout'
+import Galleries from './gallerySlick'
 
 const HallHire = () => {
   return (
     <div className=' min-h-[500px]'>
       {/* ==================== Introductory Image For Hall Hire ================== */}
       <section className=" bg-[url('/images/hallhire.png')] max-sm:bg-[url('/images/hallhire.png')] w-full bg-cover  top-0 -z-20 bg-no-repeat -mt-[8rem] ">
-        <div className=" flex justify-center justify-items-center lg:max-h-[150vh] m-auto bg-backgroundColor/30 max-lg:max-h-[90vh] ">
+        <div className=" flex justify-center justify-items-center lg:max-h-[150vh] m-auto bg-backgroundColor/30 max-lg:max-h-[110vh] ">
           <div className=" max-md:mt-[3rem] md:my-[3rem] text-textColor  ">
             <div className=" pt-[10rem] max-sm:pt-[15rem] ">
               <p className="font-playfair font-extrabold italic text-[4rem] text-center max-md:leading-[4rem] ">
@@ -42,6 +44,23 @@ const HallHire = () => {
             {/* <ServicesA/> */}
             <CenterMode/>
 
+         </div>
+      </section>
+
+      {/* =============== About Us Section ================ */}
+      <section>
+         <div className=" container m-auto ">
+            
+               <SerAbout/>
+         </div>
+      </section>
+
+      {/* ================ Galleries ================= */}
+      <section>
+         <div className=" container m-auto ">
+            <div className=" my-12 ">
+            <Galleries/>
+            </div>
          </div>
       </section>
 
