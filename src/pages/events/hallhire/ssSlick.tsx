@@ -26,16 +26,7 @@ const carouselA = [
       title: " social Events ",
       text: "Our place is the perfect venue for hosting all kinds of social events making a social events real fun",
    },
-];
-
-const callCarouselItems = () => {
-   { carouselA.forEach((element, e) => {
-      return (
-         <ServicesA key={e} image={carouselA[0].image} title={carouselA[0].title} text={carouselA[0].text}/>
-
-      )
-   })}
-}
+]
 
 
 export default class CenterMode extends Component {
