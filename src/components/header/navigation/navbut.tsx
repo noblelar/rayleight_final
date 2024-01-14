@@ -57,6 +57,7 @@ const NavBut = ({
           if (menu.id == submenuItem.submenuof) {
             hasSubmenu = true;
           }
+          return hasSubmenu;
         })}
         
 
