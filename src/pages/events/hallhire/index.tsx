@@ -59,6 +59,9 @@ const HallHire = () => {
       <section>
          <div className=" container m-auto ">
             <div className=" my-12 ">
+               <div className=" text-center font-kalnia text-[2.8rem] ">
+                  Gallery
+               </div>
             <Galleries/>
             </div>
          </div>
