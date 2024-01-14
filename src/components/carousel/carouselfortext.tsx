@@ -31,10 +31,10 @@ export const SimpleSlider = ({
           return (
             <div key={i} className=" m-auto justify-center ">
               <p className=" font-playfair text-[2rem] m-auto max-md:text-center py-8   ">
-                {bandpi.title}
+                {""}
               </p>
               <p className=" font-opensans font-medium text-[1.3rem] text-justify ">
-                {bandpi.content}
+                {""}
               </p>
             </div>
           );
