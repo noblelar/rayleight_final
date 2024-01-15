@@ -8,7 +8,7 @@ const SerAbout = () => {
       
       <div className=" flex justify-center max-lg:flex-col ">
         <div className=" lg:w-[50%] ">
-          <p className=" m-auto text-center font-playfair font-extrabold text-[2rem] my-[2rem] "> About Us </p>
+          <p className=" m-auto text-center font-playfair font-extrabold text-[2rem] my-[2rem] "> Hall Hire </p>
           <div className=" text-textColor text-justify w-[90%] m-auto md:text-[1.3rem] ">
             We offer space rental for various events, including one-off
             occasions like children&apos;s birthday parties and regular group
