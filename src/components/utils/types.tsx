@@ -8,3 +8,7 @@ export interface IMenuItem {
   submenuof: string;
 }
 
+export interface ITextCarousel{
+  title: string;
+  content: string;
+}
