@@ -39,7 +39,7 @@ export default class CenterMode extends Component {
       dots: true,
       centerMode: true,
       infinite: true,
-      speed: 1000,
+      speed: 2000,
       slidesToShow: 3,
       slidesToScroll: 1,
       initialSlide: 2,
