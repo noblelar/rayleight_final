@@ -131,7 +131,7 @@ const Index = () => {
                 Who: Children in school years 3-6 When: Tuesdays 3:30pm to
                 4:30m, during term time Where: Nash Hall – please use the side
                 entrance of the building Sign-Up?: Please email
-                joanna.lee@rayleighmethodistchurch.org.uk to book your child’s
+                joanna.lee@rayleighmethodistchurch.org.uk to book your child&apos;s
                 place in drama club Cost: This club is free!
               </div>
             </div>
