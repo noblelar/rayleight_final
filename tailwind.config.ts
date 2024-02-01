@@ -23,6 +23,7 @@ const config: Config = {
       baptism: "#b2574b",
       baptism2: "#f9ecde",
       hallhire: "#999",
+      children: "#f9ecde",
     },
     extend: {
       grayscale: {
