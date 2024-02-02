@@ -5,7 +5,7 @@ import "slick-carousel/slick/slick-theme.css";
 import Image from "next/image";
 import Link from "next/link";
 
-export default class OneSideSlide extends Component {
+export default class OneSideSlide2 extends Component {
   render() {
     const settings = {
       className: "!-z-10",
@@ -17,7 +17,6 @@ export default class OneSideSlide extends Component {
       initialSlide: 0,
       autoplay: true,
       autoplaySpeed: 4000,
-      rtl: true
     };
     return (
       <div>
@@ -29,26 +28,24 @@ export default class OneSideSlide extends Component {
                 <div className=" lg:mx-4 w-full m-auto  text-center ">
                   <Image
                     className=" w-full h-full m-auto "
-                    src={"/images/drama_club.png"}
-                    alt={"drama_club"}
+                    src={"/images/breakfast_Club.png"}
+                    alt={"breakfast_Club"}
                     width={300}
                     height={300}
                     quality={100}
                   />
                 </div>
               </div>
-              <div className="m-auto my-8 lg:w-[50%] max-lg:w-full flex justify-center items-center bg-children ">
+              <div className="m-auto my-8 lg:w-[50%] max-lg:w-full flex justify-center items-center ">
                 <div className=" max-lg:mx-4 w-full px-8 font-opensans font-semibold text-center text-[1.2rem] max-lg:p-8 ">
-                  Who: Children in school years 3-6 <br />
-                  When: Tuesdays 3:30pm to 4:30m, during term time <br /> Where:
-                  Nash Hall – please use the side entrance of the building
-                  <br /> Sign-Up?: Please email <br />
-                  <Link href={""} className=" text-center text-[1rem] hover:text-primaryColor ">
-                    joanna.lee@rayleighmethodistchurch.org.uk
-                  </Link>
-                  <br />
-                  to book your child&apos;s place in drama club <br /> Cost:
-                  This club is free!
+                  Who: Parents & Carers, Children under 5&apos;s <br />
+                  When: Fridays 9:30am to 11am, during term time <br />
+                  Where: Nash Hall – please use the side entrance of the
+                  building <br />
+                  Sign-Up?: Not necessary - just come along when you can! <br />
+                  Cost: No entry fee, minimal cost for breakfast <br />
+                  If the money is a problem for you, please come along anyway –
+                  we won&apos;t turn you away!
                 </div>
               </div>
             </div>
@@ -68,17 +65,16 @@ export default class OneSideSlide extends Component {
                   />
                 </div>
               </div>
-              <div className="m-auto my-8 lg:w-[50%] flex justify-center items-center bg-children ">
+              <div className="m-auto my-8 lg:w-[50%] flex justify-center items-center ">
                 <div className=" max-lg:mx-4 w-full px-8 font-opensans font-semibold text-center text-[1.2rem] max-lg:p-8 ">
-                  A chance for children to unleash their creative side with
-                  games and activities improving their drama skills. We&apos;ll
-                  be learning to create freezeframes, act out stories and show
-                  expressions, along with lots of fun. There will be a mix of
-                  inspiration from secular stories and songs to Bible ones. Once
-                  a term we have &apos;Drama Church&apos; – at our normal time
-                  on a Tuesday we&apos;ll go into the main bit of the church and
-                  invite parents to come and see what we&apos;ve been up to, and
-                  maybe join in with a drama game or two!
+                  Meet new people, play and have breakfast! We have toys out for
+                  the little ones to play with on one side of the room, and
+                  tables to sit round and eat on the other. At the end of the
+                  session we sing some fun songs together, which is always a
+                  highlight. We serve a full English breakfast, with sausages,
+                  bacon, beans, egg and hash browns. You can order which items
+                  you and your little ones would like, and we have toast and
+                  drinks available to help yourself.
                 </div>
               </div>
             </div>

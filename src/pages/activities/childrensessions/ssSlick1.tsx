@@ -5,7 +5,7 @@ import "slick-carousel/slick/slick-theme.css";
 import Image from "next/image";
 import Link from "next/link";
 
-export default class OneSideSlide1 extends Component {
+export default class OneSideSlide2 extends Component {
   render() {
     const settings = {
       className: "!-z-10",
@@ -17,6 +17,7 @@ export default class OneSideSlide1 extends Component {
       initialSlide: 0,
       autoplay: true,
       autoplaySpeed: 4000,
+      rtl: true
     };
     return (
       <div>
@@ -28,7 +29,7 @@ export default class OneSideSlide1 extends Component {
                 <div className=" lg:mx-4 w-full m-auto  text-center ">
                   <Image
                     className=" w-full h-full m-auto "
-                    src={"/images/drama_club.png"}
+                    src={"/images/breakfast_Club.png"}
                     alt={"drama_club"}
                     width={300}
                     height={300}
@@ -36,16 +37,15 @@ export default class OneSideSlide1 extends Component {
                   />
                 </div>
               </div>
-              <div className="m-auto my-8 lg:w-[50%] max-lg:w-full flex justify-center items-center bg-children ">
+              <div className="m-auto my-8 lg:w-[50%] max-lg:w-full flex justify-center items-center bg-sunbeam ">
                 <div className=" max-lg:mx-4 w-full px-8 font-opensans font-semibold text-center text-[1.2rem] max-lg:p-8 ">
-                  Who: Parents & Carers, Toddlers & Babies When: Mondays 1:15pm
-                  to 2:45pm, during term time Where: Nash Hall – please use the
-                  side entrance of the building Sign-Up?: Not necessary - just
-                  come along when you can! Cost: £1.50 for the first child, 50p
-                  per additional child If the money is a problem for you, please
-                  come along anyway – we won&apos;t turn you away! A lovely group for
-                  parents/carers to bring their babies and toddlers to play.
-                  There are plenty of toys out, as well as table
+                  Who: Parents & Carers, Toddlers & Babies <br /> 
+                  When: Mondays 1:15pm to 2:45pm, during term time <br /> 
+                  Where: Nash Hall – please use the side entrance of the building <br /> 
+                  Sign-Up?: Not necessary - just come along when you can! <br /> 
+                  Cost: £1.50 for the first child, 50p per additional child <br /> 
+                  If the money is a problem for you, please come along anyway – we won&apos;t turn you away! <br /> 
+                  A lovely group for parents/carers to bring their babies and toddlers to play. There are plenty of toys out, as well as table
                 </div>
               </div>
             </div>
@@ -65,8 +65,8 @@ export default class OneSideSlide1 extends Component {
                   />
                 </div>
               </div>
-              <div className="m-auto my-8 lg:w-[50%] flex justify-center items-center bg-children ">
-                <div className=" max-lg:mx-4 w-full px-8 font-opensans font-semibold text-center text-[1.2rem] max-lg:p-8 ">
+              <div className="m-auto my-8 lg:w-[50%] flex justify-center items-center bg-sunbeam ">
+                <div className=" max-lg:mx-4 w-full px-8 font-opensans font-semibold text-[1rem] max-lg:p-8 text-justify ">
                   A welcoming space for parents/carers to bring their little
                   ones for playtime. Our setup includes a variety of toys,
                   playdough, puzzles, and a designated baby corner. During the

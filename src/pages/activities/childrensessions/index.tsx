@@ -2,6 +2,8 @@ import React from "react";
 import Link from "next/link";
 import Image from "next/image";
 import OneSideSlide from "./ssSlick";
+import OneSideSlide1 from "./ssSlick1";
+import OneSideSlide2 from "./ssSlick2";
 
 const Index = () => {
   return (
@@ -112,62 +114,35 @@ const Index = () => {
         </div>
       </section>
 
+      {/* ======================== Sunbeam Baby and Toddler Group ======================== */}
+      <section>
+        <div className=" container m-auto ">
+          <div className=" text-center text-textColor font-playfair font-extrabold text-[1.8rem] ">
+          Sunbeam Baby & Toddler Group
+          </div>
+          
+          <OneSideSlide1/>
+        </div>
+      </section>
+
+      {/* ======================== Breakfast Club ======================== */}
+      <section>
+        <div className=" container m-auto ">
+          <div className=" text-center text-textColor font-playfair font-extrabold text-[1.8rem] ">
+          Breakfast Club
+          </div>
+          
+          <OneSideSlide2/>
+        </div>
+      </section>
+
+      {/* ======================== Drama Club ======================== */}
       <section>
         <div className=" container m-auto ">
           <div className=" text-center text-textColor font-playfair font-extrabold text-[1.8rem] ">
             Drama Club
           </div>
-          {/* <div className=" flex w-full text-textColor ">
-            <div className="m-auto my-8 lg:w-[40%]  ">
-              <div className=" max-lg:mx-4 ">
-                <Image
-                  className=" w-full h-full "
-                  src={"/images/drama_club.png"}
-                  alt={"drama_club"}
-                  width={600}
-                  height={600}
-                  quality={100}
-                />
-              </div>
-            </div>
-            <div className="m-auto my-8 lg:w-[60%] flex justify-center items-center bg-children ">
-              <div className=" max-lg:mx-4 w-full px-8 font-opensans font-semibold text-center text-[1.2rem] ">
-                Who: Children in school years 3-6 <br />
-                When: Tuesdays 3:30pm to 4:30m, during term time <br /> Where:
-                Nash Hall – please use the side entrance of the building <br />{" "}
-                Sign-Up?: Please email joanna.lee@rayleighmethodistchurch.org.uk
-                to book your child&apos;s place in drama club <br /> Cost: This
-                club is free!
-              </div>
-            </div>
-          </div>
-          <div className=" flex w-full text-textColor flex-row-reverse ">
-            <div className="m-auto my-8 lg:w-[40%]  ">
-              <div className=" max-lg:mx-4 ">
-                <Image
-                  className=" w-full h-full "
-                  src={"/images/children_theater.png"}
-                  alt={"drama_club"}
-                  width={600}
-                  height={600}
-                  quality={100}
-                />
-              </div>
-            </div>
-            <div className="m-auto my-8 lg:w-[60%] flex justify-center items-center bg-children ">
-              <div className=" max-lg:mx-4 w-full px-8 font-opensans font-semibold text-center text-[1.2rem] ">
-                A chance for children to unleash their creative side with games
-                and activities improving their drama skills. We&apos;ll be learning
-                to create freezeframes, act out stories and show expressions,
-                along with lots of fun. There will be a mix of inspiration from
-                secular stories and songs to Bible ones. Once a term we have
-                &apos;Drama Church&apos; – at our normal time on a Tuesday we&apos;ll go into
-                the main bit of the church and invite parents to come and see
-                what we&apos;ve been up to, and maybe join in with a drama game or
-                two!
-              </div>
-            </div>
-          </div> */}   
+          
           <OneSideSlide/>
         </div>
       </section>
