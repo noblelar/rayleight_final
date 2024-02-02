@@ -3,21 +3,19 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Image from "next/image";
-
+import Link from "next/link";
 
 export default class OneSideSlide extends Component {
   render() {
     const settings = {
-      className: "",
+      className: "!-z-10",
       dots: true,
       infinite: true,
-      // centerMode: true,
       slidesToShow: 1,
       slidesToScroll: 1,
-      // variableWidth: true,
       speed: 2000,
-      initialSlide: 1,
-      // autoplay: true,
+      initialSlide: 0,
+      autoplay: true,
       autoplaySpeed: 4000,
     };
     return (
@@ -39,25 +37,28 @@ export default class OneSideSlide extends Component {
                 </div>
               </div>
               <div className="m-auto my-8 lg:w-[50%] max-lg:w-full flex justify-center items-center bg-children ">
-                <div className=" max-lg:mx-4 w-full px-8 font-opensans font-semibold text-center text-[1.2rem] ">
+                <div className=" max-lg:mx-4 w-full px-8 font-opensans font-semibold text-center text-[1.2rem] max-lg:p-8 ">
                   Who: Children in school years 3-6 <br />
                   When: Tuesdays 3:30pm to 4:30m, during term time <br /> Where:
                   Nash Hall – please use the side entrance of the building
-                  <br /> Sign-Up?: Please email
-                  joanna.lee@rayleighmethodistchurch.org.uk to book your
-                  child&apos;s place in drama club <br /> Cost: This club is
-                  free!
+                  <br /> Sign-Up?: Please email <br />
+                  <Link href={""} className=" text-center text-[1rem] ">
+                    joanna.lee@rayleighmethodistchurch.org.uk
+                  </Link>
+                  <br />
+                  to book your child&apos;s place in drama club <br /> Cost:
+                  This club is free!
                 </div>
               </div>
             </div>
           </div>
 
-          {/* <div className=" w-full ">
-            <div className=" flex w-full text-textColor flex-row-reverse ">
+          <div className=" w-full ">
+            <div className=" flex w-full text-textColor max-lg:flex-col flex-row-reverse ">
               <div className="m-auto my-8 lg:w-[35%] ">
-                <div className=" max-lg:mx-4 w-full relative ">
+                <div className=" max-lg:mx-4 w-full text-center ">
                   <Image
-                    className=" w-full h-full relative "
+                    className=" w-full h-full m-auto "
                     src={"/images/children_theater1.png"}
                     alt={"children Theater"}
                     width={300}
@@ -67,7 +68,7 @@ export default class OneSideSlide extends Component {
                 </div>
               </div>
               <div className="m-auto my-8 lg:w-[50%] flex justify-center items-center bg-children ">
-                <div className=" max-lg:mx-4 w-full px-8 font-opensans font-semibold text-center text-[1.2rem] "> 
+                <div className=" max-lg:mx-4 w-full px-8 font-opensans font-semibold text-center text-[1.2rem] max-lg:p-8 ">
                   A chance for children to unleash their creative side with
                   games and activities improving their drama skills. We&apos;ll
                   be learning to create freezeframes, act out stories and show
@@ -80,9 +81,7 @@ export default class OneSideSlide extends Component {
                 </div>
               </div>
             </div>
-          </div> */}
-
-
+          </div>
         </Slider>
       </div>
     );
