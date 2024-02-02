@@ -95,6 +95,7 @@ const Index = () => {
         </div>
       </section>
       {/* ==================== Children's Group ================= */}
+      
       <section>
         <div className="container m-auto border-t-4 mt-8 ">
           <div className=" text-textColor my-8 ">
@@ -116,7 +117,7 @@ const Index = () => {
           <div className=" text-center text-textColor font-playfair font-extrabold text-[1.8rem] ">
             Drama Club
           </div>
-          <div className=" flex w-full text-textColor ">
+          {/* <div className=" flex w-full text-textColor ">
             <div className="m-auto my-8 lg:w-[40%]  ">
               <div className=" max-lg:mx-4 ">
                 <Image
@@ -166,9 +167,11 @@ const Index = () => {
                 two!
               </div>
             </div>
-          </div>
+          </div> */}   
+          <OneSideSlide/>
         </div>
       </section>
+
     </div>
   );
 };
