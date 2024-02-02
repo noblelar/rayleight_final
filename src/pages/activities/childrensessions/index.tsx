@@ -196,6 +196,7 @@ const Index = () => {
           </div>
         </div>
       </section>
+      
     </div>
   );
 };
