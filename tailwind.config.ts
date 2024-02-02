@@ -24,6 +24,7 @@ const config: Config = {
       baptism2: "#f9ecde",
       hallhire: "#999",
       children: "#f9ecde",
+      sunbeam: "#eeddda",
     },
     extend: {
       grayscale: {

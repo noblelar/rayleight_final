@@ -5,7 +5,7 @@ import "slick-carousel/slick/slick-theme.css";
 import Image from "next/image";
 import Link from "next/link";
 
-export default class OneSideSlide extends Component {
+export default class OneSideSlide1 extends Component {
   render() {
     const settings = {
       className: "!-z-10",
@@ -38,16 +38,14 @@ export default class OneSideSlide extends Component {
               </div>
               <div className="m-auto my-8 lg:w-[50%] max-lg:w-full flex justify-center items-center bg-children ">
                 <div className=" max-lg:mx-4 w-full px-8 font-opensans font-semibold text-center text-[1.2rem] max-lg:p-8 ">
-                  Who: Children in school years 3-6 <br />
-                  When: Tuesdays 3:30pm to 4:30m, during term time <br /> Where:
-                  Nash Hall – please use the side entrance of the building
-                  <br /> Sign-Up?: Please email <br />
-                  <Link href={""} className=" text-center text-[1rem] hover:text-primaryColor ">
-                    joanna.lee@rayleighmethodistchurch.org.uk
-                  </Link>
-                  <br />
-                  to book your child&apos;s place in drama club <br /> Cost:
-                  This club is free!
+                  Who: Parents & Carers, Toddlers & Babies When: Mondays 1:15pm
+                  to 2:45pm, during term time Where: Nash Hall – please use the
+                  side entrance of the building Sign-Up?: Not necessary - just
+                  come along when you can! Cost: £1.50 for the first child, 50p
+                  per additional child If the money is a problem for you, please
+                  come along anyway – we won&apos;t turn you away! A lovely group for
+                  parents/carers to bring their babies and toddlers to play.
+                  There are plenty of toys out, as well as table
                 </div>
               </div>
             </div>
@@ -69,15 +67,31 @@ export default class OneSideSlide extends Component {
               </div>
               <div className="m-auto my-8 lg:w-[50%] flex justify-center items-center bg-children ">
                 <div className=" max-lg:mx-4 w-full px-8 font-opensans font-semibold text-center text-[1.2rem] max-lg:p-8 ">
-                  A chance for children to unleash their creative side with
-                  games and activities improving their drama skills. We&apos;ll
-                  be learning to create freezeframes, act out stories and show
-                  expressions, along with lots of fun. There will be a mix of
-                  inspiration from secular stories and songs to Bible ones. Once
-                  a term we have &apos;Drama Church&apos; – at our normal time
-                  on a Tuesday we&apos;ll go into the main bit of the church and
-                  invite parents to come and see what we&apos;ve been up to, and
-                  maybe join in with a drama game or two!
+                  A welcoming space for parents/carers to bring their little
+                  ones for playtime. Our setup includes a variety of toys,
+                  playdough, puzzles, and a designated baby corner. During the
+                  session, children enjoy a snack with fruit, biscuits, and
+                  drinks, while adults can have a hot drink. The session
+                  concludes with a sing-song featuring nursery rhymes and
+                  musical instruments. A welcoming space for parents/carers to
+                  bring their little ones for playtime. Our setup includes a
+                  variety of toys, playdough, puzzles, and a designated baby
+                  corner. During the session, children enjoy a snack with fruit,
+                  biscuits, and drinks, while adults can have a hot drink. The
+                  session concludes with a sing-song featuring nursery rhymes
+                  and musical instruments. Sunbeam Baby & Toddler Group Parents
+                  & carers appreciate the change of scene and the opportunity
+                  for children to develop social skills like sharing. The group
+                  also allows adults to connect with others, providing a social
+                  break – if the kids allow them some playtime off. A welcoming
+                  space for parents/carers to bring their little ones for
+                  playtime. Our setup includes a variety of toys, playdough,
+                  puzzles, and a designated baby corner. During the session,
+                  children enjoy a snack with fruit, biscuits, and drinks, while
+                  adults can have a hot drink. The session concludes with a
+                  sing-song featuring nursery rhymes and musical instruments.
+                  Sunbeam Baby & Toddler Group Meet new people, play and have
+                  breakf
                 </div>
               </div>
             </div>
