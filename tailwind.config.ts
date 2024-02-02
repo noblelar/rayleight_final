@@ -25,6 +25,7 @@ const config: Config = {
       hallhire: "#999",
       children: "#f9ecde",
       sunbeam: "#eeddda",
+      service: "#4bacc6",
     },
     extend: {
       grayscale: {
