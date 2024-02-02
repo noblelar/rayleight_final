@@ -97,7 +97,7 @@ const Index = () => {
         </div>
       </section>
       {/* ==================== Children's Group ================= */}
-      
+
       <section>
         <div className="container m-auto border-t-4 mt-8 ">
           <div className=" text-textColor my-8 ">
@@ -118,10 +118,10 @@ const Index = () => {
       <section>
         <div className=" container m-auto ">
           <div className=" text-center text-textColor font-playfair font-extrabold text-[1.8rem] ">
-          Sunbeam Baby & Toddler Group
+            Sunbeam Baby & Toddler Group
           </div>
-          
-          <OneSideSlide1/>
+
+          <OneSideSlide1 />
         </div>
       </section>
 
@@ -129,10 +129,10 @@ const Index = () => {
       <section>
         <div className=" container m-auto ">
           <div className=" text-center text-textColor font-playfair font-extrabold text-[1.8rem] ">
-          Breakfast Club
+            Breakfast Club
           </div>
-          
-          <OneSideSlide2/>
+
+          <OneSideSlide2 />
         </div>
       </section>
 
@@ -142,11 +142,60 @@ const Index = () => {
           <div className=" text-center text-textColor font-playfair font-extrabold text-[1.8rem] ">
             Drama Club
           </div>
-          
-          <OneSideSlide/>
+
+          <OneSideSlide />
         </div>
       </section>
 
+      {/* ======================== Messy Church ======================== */}
+      <section>
+        <div className=" container m-auto ">
+          <div className=" text-center text-textColor font-playfair font-extrabold text-[1.8rem] ">
+            Messy Church
+          </div>
+
+          <div className=" w-full ">
+            <div className=" flex w-full text-textColor max-lg:flex-col-reverse flex-row-reverse ">
+              <div className="m-auto my-8 lg:w-[35%] ">
+                <div className=" w-full text-center m-auto ">
+                  <Image
+                    className=" w-full h-full "
+                    src={"/images/messy_church.jpg"}
+                    alt={"children Theater"}
+                    width={300}
+                    height={300}
+                    quality={100}
+                  />
+                </div>
+              </div>
+              <div className="m-auto my-8 lg:w-[50%] flex justify-center items-center ">
+                <div className=" max-lg:mx-4 w-full px-8 font-opensans font-semibold text-center text-[1.2rem] max-lg:p-8 ">
+                  Who: Everyone! Especially aimed at families. <br />
+                  When: Last Sunday of the month, 4pm to 6pm (except Dec & Aug){" "}
+                  <br />
+                  Where: Nash Hall – please use the side entrance of the
+                  building <br />
+                  Sign-Up?: Not necessary - just come along when you can! <br />
+                  Cost: No entry fee, donations towards the church are welcome
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className=" w-full ">
+            <div className=" m-auto text-center my-8 ">
+              <div className=" max-w-[500px] text-textColor m-auto text-[1.2rem] p-4 ">
+                Messy Church is a different expression of church – and a much
+                messier one than normal! We spend the first hour doing some
+                messy craft activities, often including painting or cooking, all
+                around a theme. After this we head into the main part of the
+                church- we sing some songs and have a short, child-friendly talk
+                about our theme. Then we head back to the hall for food. 
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
   );
 };

@@ -26,10 +26,10 @@ export default class OneSideSlide2 extends Component {
           <div className=" w-full ">
             <div className=" flex w-full text-textColor max-lg:flex-col ">
               <div className="m-auto my-8 lg:w-[35%] ">
-                <div className=" lg:mx-4 w-full m-auto  text-center ">
+                <div className=" w-full text-center m-auto ">
                   <Image
                     className=" w-full h-full m-auto "
-                    src={"/images/breakfast_Club.png"}
+                    src={"/images/sunbeams_logo.png"}
                     alt={"drama_club"}
                     width={300}
                     height={300}
@@ -54,10 +54,10 @@ export default class OneSideSlide2 extends Component {
           <div className=" w-full ">
             <div className=" flex w-full text-textColor max-lg:flex-col-reverse flex-row-reverse ">
               <div className="m-auto my-8 lg:w-[35%] ">
-                <div className=" max-lg:mx-4 w-full text-center ">
+                <div className="  w-full text-center m-auto ">
                   <Image
                     className=" w-full h-full m-auto "
-                    src={"/images/children_theater1.png"}
+                    src={"/images/children_playground.png"}
                     alt={"children Theater"}
                     width={300}
                     height={300}

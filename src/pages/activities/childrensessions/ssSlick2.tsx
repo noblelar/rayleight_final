@@ -25,7 +25,7 @@ export default class OneSideSlide2 extends Component {
           <div className=" w-full ">
             <div className=" flex w-full text-textColor max-lg:flex-col ">
               <div className="m-auto my-8 lg:w-[35%] ">
-                <div className=" lg:mx-4 w-full m-auto  text-center ">
+                <div className=" w-full text-center m-auto ">
                   <Image
                     className=" w-full h-full m-auto "
                     src={"/images/breakfast_Club.png"}
@@ -54,13 +54,13 @@ export default class OneSideSlide2 extends Component {
           <div className=" w-full ">
             <div className=" flex w-full text-textColor max-lg:flex-col-reverse flex-row-reverse ">
               <div className="m-auto my-8 lg:w-[35%] ">
-                <div className=" max-lg:mx-4 w-full text-center ">
+                <div className=" w-full text-center m-auto ">
                   <Image
                     className=" w-full h-full m-auto "
-                    src={"/images/children_theater1.png"}
-                    alt={"children Theater"}
+                    src={"/images/breakfast_plate.jpg"} 
+                    alt={"children Theater"} 
                     width={300}
-                    height={300}
+                    height={300} 
                     quality={100}
                   />
                 </div>
@@ -74,8 +74,8 @@ export default class OneSideSlide2 extends Component {
                   highlight. We serve a full English breakfast, with sausages,
                   bacon, beans, egg and hash browns. You can order which items
                   you and your little ones would like, and we have toast and
-                  drinks available to help yourself.
-                </div>
+                  drinks available to help yourself.   
+                </div> 
               </div>
             </div>
           </div>
