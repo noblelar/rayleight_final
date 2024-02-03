@@ -20,8 +20,8 @@ const Gallery = ({ image , title }: { image:string, title:string }) => {
             quality={100}
           />
         </div>
-        <div className=" text-textColor w-[20rem] px-4 ">
-          <p className=" font-playfair text-[1.3rem] font-extrabold text-center p-2 ">
+        <div className=" text-textColor max-w-[20rem] m-auto ">
+          <p className=" font-playfair text-[1.3rem] font-extrabold text-center ">
             {title}
           </p>
         
