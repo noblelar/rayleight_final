@@ -35,7 +35,7 @@ export default class CenterMode extends Component {
   render() {
 
    var settings = {
-      className: " !-z-10 ",
+      className: " !-z-10  ",
       dots: true,
       centerMode: true,
       infinite: true,
@@ -72,7 +72,7 @@ export default class CenterMode extends Component {
     };
 
     return (
-      <div>
+      <div className=" overflow-x-hidden ">
         {/* <h2>Center Mode</h2> */}
         <Slider {...settings}>
 

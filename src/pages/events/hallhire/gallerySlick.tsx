@@ -83,7 +83,7 @@ export default class Galleries extends Component {
     };
 
     return (
-      <div>
+      <div className=" overflow-x-hidden ">
         {/* <h2>Center Mode</h2> */}
         <Slider {...settings}>
           {carouselG.map((car, e) => (
