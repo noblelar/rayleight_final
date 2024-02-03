@@ -16,7 +16,7 @@ const ServicesA = ( { image, title, text } : {key: any, image: string, title: st
             quality={100}
           />
         </div>
-        <div className=" text-textColor w-[20rem] px-4 ">
+        <div className=" text-textColor max-w-[20rem] px-1 m-auto ">
           <p className=" font-playfair text-[1.3rem] font-extrabold text-center p-2 ">
             {title}
           </p>

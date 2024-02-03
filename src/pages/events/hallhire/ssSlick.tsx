@@ -45,6 +45,7 @@ export default class CenterMode extends Component {
       initialSlide: 2,
       autoplay: true,
       autoplaySpeed: 4000, 
+      adaptiveHeight: true,
       responsive: [
         {
           breakpoint: 1300,
