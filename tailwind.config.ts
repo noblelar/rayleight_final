@@ -7,6 +7,16 @@ const config: Config = {
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
+    fontFamily: {
+      opensans: ["Open Sans", "sans-serif"],
+      kalnia: ["Kalnia", "serif"],
+      playfair: ["Playfair Display", "serif"],
+    },
+    colors: {
+      primaryColor: "#cd0e2d",
+      backgroundColor: "#fff",
+      textColor: "#000",
+    },
     extend: {
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
