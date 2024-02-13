@@ -11,11 +11,13 @@ const config: Config = {
       opensans: ["Open Sans", "sans-serif"],
       kalnia: ["Kalnia", "serif"],
       playfair: ["Playfair Display", "serif"],
+      mulish: ["Mulish", "sans-serif"],
     },
     colors: {
       primaryColor: "#cd0e2d",
       backgroundColor: "#fff",
       textColor: "#000",
+      textColor1: "#BEBEBE",
     },
     extend: {
       backgroundImage: {

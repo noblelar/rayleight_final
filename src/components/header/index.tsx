@@ -2,6 +2,8 @@ import React from "react";
 import ButtonA from "../buttons/ind";
 import Link from "next/link";
 import Image from "next/image";
+import NavBut from "./navigation/Navbut";
+import { menuItems } from "../utils";
 
 const Header = () => {
   return (
@@ -24,7 +26,7 @@ const Header = () => {
                     />
                   </div>
 
-                  <div className="pt-4 font-bold leading-5 md:leading-7 items-center px-2 font-playfair text-[1.2rem] text-primaryColor m-auto">
+                  <div className="font-bold items-center px-2 font-playfair text-[1.2rem] text-primaryColor m-auto">
                     Rayleigh Methodist Church
                   </div>
                 </div>
@@ -33,6 +35,28 @@ const Header = () => {
           <MenuToggle toggle={toggle} />
         </div> */}
             </div>
+
+            {/* ========== Phone Nav Area ============= */}
+            <div className=" flex m-auto ">
+              <div className=" font-mulish text-textColor1 m-auto ">
+                <ul className=" flex list-none lg:space-x-6 text-center m-auto justify-center ">
+                  {menuItems.map((menuItem, i) => {
+                    if (!menuItem.submenuof) {
+                      return (
+                        <NavBut
+                          key={i}
+                          menu={menuItem}
+                          idNumber={i}
+                          toggle={() => ToggleEvent}
+                        />
+                      );
+                    }
+                  })}
+                </ul>
+              </div>
+            </div>
+
+            {/* ========= Buttons Area ============ */}
             <div className=" flex space-x-8 justify-center m-auto mr-0">
               <ButtonA
                 text="Hall Hire?"
