@@ -2,12 +2,12 @@ import React from "react";
 import ButtonA from "../buttons/ind";
 import Link from "next/link";
 import Image from "next/image";
-import NavBut from "./navigation/Navbut";
 import { menuItems } from "../utils";
+import NavBut from "./navigation/navbut";
 
 const Header = () => {
   return (
-    <header>
+    <header className={`!sticky !-top-1 bg-backgroundColor `}>
       <div className="w-full shadow-lg">
         <div className=" container m-auto ">
           <div className=" w-full flex justify-between ">
