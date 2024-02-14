@@ -4,6 +4,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { menuItems } from "../utils";
 import NavBut from "./navigation/navbut";
+import App from "./mobilenav/app";
 
 const Header = () => {
   return (
@@ -72,6 +73,11 @@ const Header = () => {
                 onClick={() => {}}
                 classN="border-primaryColor border text-backgroundColor bg-primaryColor "
               />
+            </div>
+
+            {/* ================ Mobile Nav ============= */}
+            <div className="flex justify-center z-30 my-auto mr-4">
+              <App />
             </div>
           </div>
         </div>
