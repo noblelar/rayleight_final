@@ -25,7 +25,7 @@ const NavBut = ({
 
   const handleActiveNav = (path: string) => {
     if (activePath == path) {
-      return "text-primaryColor ";
+      return "text-primaryColor max-lg:text-backgroundColor   ";
     }
   };
 

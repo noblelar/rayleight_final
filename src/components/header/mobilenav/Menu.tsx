@@ -40,7 +40,7 @@ export function Menu({ toggle }: any) {
           <MenuToggle toggle={toggle} />
         </div>
       </div>
-      <ul>
+      <ul className=" text-backgroundColor ">
         {menuItems.map((menuItem, i) => {
           if (!menuItem.submenuof) {
             return (
@@ -52,3 +52,5 @@ export function Menu({ toggle }: any) {
     </nav>
   );
 }
+
+

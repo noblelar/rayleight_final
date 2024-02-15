@@ -37,8 +37,8 @@ const Header = () => {
         </div> */}
             </div>
 
-            {/* ========== Phone Nav Area ============= */}
-            <div className=" flex m-auto ">
+            {/* ========== Desktop Nav Area ============= */}
+            <div className=" max-lg:hidden flex m-auto ">
               <div className=" font-mulish text-textColor1 m-auto ">
                 <ul className=" flex list-none lg:space-x-6 text-center m-auto justify-center ">
                   {menuItems.map((menuItem, i) => {
@@ -51,6 +51,7 @@ const Header = () => {
                           toggle={() => ToggleEvent}
                         />
                       );
+
                     }
                   })}
                 </ul>
@@ -58,7 +59,7 @@ const Header = () => {
             </div>
 
             {/* ========= Buttons Area ============ */}
-            <div className=" flex space-x-8 justify-center m-auto mr-0">
+            <div className=" max-lg:hidden flex space-x-8 justify-center m-auto mr-0">
               <ButtonA
                 text="Hall Hire?"
                 bgcolor={0}
@@ -75,8 +76,8 @@ const Header = () => {
               />
             </div>
 
-            {/* ================ Mobile Nav ============= */}
-            <div className="flex justify-center z-30 my-auto mr-4">
+            {/* ================ Mobile Nav Button ============= */}
+            <div className=" lg:hidden flex justify-center z-30 my-auto mr-4">
               <App />
             </div>
           </div>
