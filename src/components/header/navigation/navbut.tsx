@@ -25,13 +25,13 @@ const NavBut = ({
 
   const handleActiveNav = (path: string) => {
     if (activePath == path) {
-      return "text-primaryColor max-lg:text-backgroundColor   ";
+      return "text-primaryColor max-lg:bg-backgroundColor max-lg:text-[2rem]  ";
     }
   };
 
   return (
     <li
-      className={` hover:text-primaryColor hover:scale-110 ${handleActiveNav(
+      className={` hover:text-primaryColor hover:scale-110 max-lg:text-backgroundColor max-lg:text-[1.6rem] font-mulish ${handleActiveNav(
         menu.path
       )} my-[5%] `}
     > 

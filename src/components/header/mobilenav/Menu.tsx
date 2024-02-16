@@ -10,7 +10,7 @@ export function Menu({ toggle }: any) {
   // const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="menu">
+    <nav className="menu text-center ">
       {/* ========Logo Area ====== */}
       <div className="flex items-center justify-center font-opensans">
         <Link href={"/"}>
@@ -26,7 +26,7 @@ export function Menu({ toggle }: any) {
               />
             </div>
 
-            <div className="pt-4 font-extrabold leading-5 md:leading-7 items-center px-2  text-backgroundColor m-auto">
+            <div className="pt-4 text-left font-extrabold leading-5 md:leading-7 items-center px-2  text-backgroundColor m-auto">
               <span className="text-[1.5rem] ">R</span>
               ayleigh <br />
               <span className="text-[1.5rem] ">M</span>
@@ -40,7 +40,7 @@ export function Menu({ toggle }: any) {
           <MenuToggle toggle={toggle} />
         </div>
       </div>
-      <ul className=" text-backgroundColor ">
+      <ul className=" text-backgroundColor m-auto h-[70vh] mt-[3rem] ">
         {menuItems.map((menuItem, i) => {
           if (!menuItem.submenuof) {
             return (
