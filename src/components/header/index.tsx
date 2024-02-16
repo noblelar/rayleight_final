@@ -15,8 +15,8 @@ const Header = () => {
             {/* ========Logo Area ====== */}
             <div className="flex items-center justify-center font-opensans">
               <Link href={"/"}>
-                <div className="flex justify-center ">
-                  <div className=" w-[70px] md:w-[90px] m-auto">
+                <div className="flex items-start justify-center lg:min-w-[300px] ">
+                  <div className=" w-[70px] md:w-[90px] my-auto ">
                     <Image
                       className="pt-2 "
                       src={"/images/logored.svg"}
@@ -27,14 +27,17 @@ const Header = () => {
                     />
                   </div>
 
-                  <div className="font-bold items-center px-2 font-playfair text-[1.2rem] text-primaryColor m-auto">
-                    Rayleigh Methodist Church
+                  <div className=" my-auto pt-4 text-left md:leading-7 leading-tight text-primaryColor font-mulish font-medium text-[1.5rem] max-md:text-[1.1rem] ">
+                    <p className=" m-0 p-0 ">Rayleigh</p>
+                    <p className=" font-semibold m-0 p-0 ">Methodist</p>
+                    <p className=" m-0 p-0 ">Church</p>
                   </div>
+                  {/* <div className="font-bold items-center px-2 font-playfair text-[1.2rem] text-primaryColor m-auto md:max-lg:text-[2rem] ">
+                    Rayleigh Methodist Church
+                  </div> */}
                 </div>
               </Link>
-              {/* <div className={" ml-[3rem] "}>
-          <MenuToggle toggle={toggle} />
-        </div> */}
+             
             </div>
 
             {/* ========== Desktop Nav Area ============= */}
@@ -51,7 +54,6 @@ const Header = () => {
                           toggle={() => ToggleEvent}
                         />
                       );
-
                     }
                   })}
                 </ul>

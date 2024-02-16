@@ -12,8 +12,8 @@ export function Menu({ toggle }: any) {
   return (
     <nav className="menu text-center ">
       {/* ========Logo Area ====== */}
-      <div className="flex items-center justify-center font-opensans">
-        <Link href={"/"}>
+      <div className="flex items-center justify-between font-opensans mx-4 border-b-backgroundColor border-4 md:max-lg:mx-8 ">
+        <Link href={"/"} >
           <div className="flex justify-center ">
             <div className=" w-[70px] md:w-[100px] m-auto">
               <Image
@@ -26,21 +26,21 @@ export function Menu({ toggle }: any) {
               />
             </div>
 
-            <div className="pt-4 text-left font-extrabold leading-5 md:leading-7 items-center px-2  text-backgroundColor m-auto">
-              <span className="text-[1.5rem] ">R</span>
-              ayleigh <br />
-              <span className="text-[1.5rem] ">M</span>
-              ethodist <br />
-              <span className="text-[1.5rem] ">C</span>
-              hurch
-            </div>
+            <div className=" my-auto pt-4 text-left md:leading-7 leading-tight text-backgroundColor font-mulish font-medium text-[1.5rem] max-md:text-[1.1rem] ">
+                    <p className=" m-0 p-0 ">Rayleigh</p>
+                    <p className=" font-semibold m-0 p-0 ">Methodist</p>
+                    <p className=" m-0 p-0 ">Church</p>
+                  </div>
+            {/* <div className="font-bold items-center px-2 font-playfair text-[1.2rem] text-backgroundColor text-left m-auto pt-2 md:text-[2rem] ">
+              Rayleigh Methodist Church
+            </div> */}
           </div>
         </Link>
         <div className={" ml-[3rem] "}>
           <MenuToggle toggle={toggle} />
         </div>
       </div>
-      <ul className=" text-backgroundColor m-auto h-[70vh] mt-[3rem] ">
+      <ul className=" text-backgroundColor m-auto flex flex-col justify-center items-center h-[70vh] mt-[rem]  ">
         {menuItems.map((menuItem, i) => {
           if (!menuItem.submenuof) {
             return (
@@ -52,5 +52,4 @@ export function Menu({ toggle }: any) {
     </nav>
   );
 }
-
 

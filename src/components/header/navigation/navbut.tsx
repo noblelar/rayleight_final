@@ -25,15 +25,15 @@ const NavBut = ({
 
   const handleActiveNav = (path: string) => {
     if (activePath == path) {
-      return "text-primaryColor max-lg:bg-backgroundColor max-lg:text-[2rem]  ";
+      return "text-primaryColor max-lg:bg-backgroundColor max-lg:text-[2rem] max-lg:rounded-lg font-bold ";
     }
   };
 
   return (
     <li
-      className={` hover:text-primaryColor hover:scale-110 max-lg:text-backgroundColor max-lg:text-[1.6rem] font-mulish ${handleActiveNav(
+      className={` lg:hover:text-primaryColor hover:scale-110 max-lg:text-backgroundColor max-lg:text-[1.6rem] font-mulish max-lg:w-[50%] ${handleActiveNav(
         menu.path
-      )} my-[5%] `}
+      )} my-[5%] md:max-lg:text-[2rem] `}
     > 
       <Link
         onClick={toggle}

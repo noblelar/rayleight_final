@@ -70,7 +70,7 @@ export const menuItems: IMenuItem[] = [
   {
     id: "calender",
     label: "Calender",
-    path: "/contact",
+    path: "/calender",
     submenu: [],
     submenuof: "",
   },
