@@ -16,17 +16,18 @@ export const menuItems: IMenuItem[] = [
   //   submenu: [],
   //   submenuof: "",
   // },
-  // {
-  //   id: "services",
-  //   label: "Services",
-  //   path: "/services",
-  //   submenu: [],
-  //   submenuof: "",
-  // },
+ 
   {
     id: "aboutus",
     label: "About Us",
     path: "/aboutus",
+    submenu: [],
+    submenuof: "",
+  },
+  {
+    id: "services",
+    label: "Services",
+    path: "/services",
     submenu: [],
     submenuof: "",
   },
