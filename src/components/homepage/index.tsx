@@ -88,7 +88,7 @@ const Homepage = () => {
                   bgcolor={0}
                   txcolor={1}
                   onClick={() => {}}
-                  classN="border-backgroundColor border  text-primaryColor bg-backgroundColor lg:pl-[2rem] "
+                  classN="border-backgroundColor border  text-primaryColor bg-backgroundColor "
                   hrefA="/home"
                 />
               </div>
@@ -113,7 +113,7 @@ const Homepage = () => {
                 Whichever suits you best, we hope to see you there! Please contact Jo for zoom details or more information.
                 </p>
               </div>
-              <ButtonA text="Contact Us" bgcolor={1} txcolor={0} onClick={()=>{}} classN=" border-primaryColor border  text-backgroundColor bg-primaryColor lg:pl-[2rem] " />
+              <ButtonA text="Contact Us" bgcolor={1} txcolor={0} onClick={()=>{}} classN=" border-primaryColor border  text-backgroundColor bg-primaryColor " />
             </div>
             <div></div>
           </div>
