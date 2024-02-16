@@ -5,6 +5,7 @@ import Image from "next/image";
 import { menuItems } from "../utils";
 import NavBut from "./navigation/navbut";
 import App from "./mobilenav/app";
+import Search from "../buttons/search";
 
 const Header = () => {
   return (
@@ -76,10 +77,12 @@ const Header = () => {
                 onClick={() => {}}
                 classN="border-primaryColor border text-backgroundColor bg-primaryColor "
               />
+              <Search/>
             </div>
 
             {/* ================ Mobile Nav Button ============= */}
-            <div className=" lg:hidden flex justify-center z-30 my-auto mr-4">
+            <div className=" lg:hidden flex justify-center z-30 my-auto mr-4 space-x-4 md:space-x-8 ">
+              <Search/>
               <App />
             </div>
           </div>
