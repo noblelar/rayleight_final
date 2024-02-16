@@ -26,7 +26,7 @@ function ButtonA({
   const colorA = transform([0, 100], trans[txcolor])(100);
 
   return (
-    <Link href={hrefA ? hrefA : ""}>
+    <Link href={hrefA ? hrefA : "/home"}>
       <motion.div
         whileHover={{
           scale: 1.1,

@@ -18,6 +18,7 @@ const config: Config = {
       backgroundColor: "#fff",
       textColor: "#000",
       textColor1: "#BEBEBE",
+      textColor2: "#2E3133",
     },
     extend: {
       backgroundImage: {
