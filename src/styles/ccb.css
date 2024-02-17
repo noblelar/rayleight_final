@@ -1,0 +1,41 @@
+.color-change-button {
+  position: relative;
+  color: #cd0e2d;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  overflow: hidden;
+  border: #cd0e2d solid 1px;
+}
+
+.color-change-animation {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: radial-gradient(circle at left, #cd0e2d 0%, #cd0e2d 30%, transparent 40%);
+  animation: expandGradient 2s forwards; /* Radial gradient expand animation */
+  z-index: -1; /* Ensure the animation is behind the button content */
+  color: white;
+}
+
+@keyframes expandGradient {
+  from {
+    width: 0;
+  }
+  to {
+    width: 400%; /* Ensure the gradient fully covers the button */
+  }
+}
+
+.color-change-button.hovered .color-change-animation {
+  background: radial-gradient(circle at left, #cd0e2d 0%, #cd0e2d 30%, transparent 40%);
+  color: white;
+}
+
+.color-change-button:hover .color-change-animation {
+  background: radial-gradient(circle at left, #cd0e2d 0%, #cd0e2d 30%, transparent 40%);
+  color: white;
+}

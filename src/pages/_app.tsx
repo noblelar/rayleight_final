@@ -1,5 +1,6 @@
 import "@/styles/globals.css";
 import "@/styles/styles.css";
+import "@/styles/ccb.css";
 
 import type { AppProps } from "next/app";
 import Layout from "@/components/layout";

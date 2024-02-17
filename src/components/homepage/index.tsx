@@ -1,9 +1,16 @@
 import React from "react";
 import ButtonA from "../buttons/ind";
+import Image from "next/image";
+import { RiArrowLeftSLine, RiArrowRightSLine } from "react-icons/ri";
+import { BiCalendarAlt } from "react-icons/bi";
+import { FaLocationDot } from "react-icons/fa6";
+import ColorChangeButton from "../buttons/ccbbutton";
+import ButtonB from "../buttons/ccbbutton";
 
 const Homepage = () => {
   return (
     <div className={``}>
+      {/* ============= Hero Image ============= */}
       <section
         data-theme="black"
         className=" bg-[url('/images/church_img.png')] xl:h-[100vh] h-[90vh] w-full bg-cover  top-0 -z-20 bg-no-repeat -mt-[8rem] "
@@ -100,22 +107,112 @@ const Homepage = () => {
       {/* ============ Join Us =========== */}
       <section>
         <div className="container m-auto">
-          <div className="flex text-textColor py-[5rem] ">
-            <div>
-              <div className="  ">
-                <p>Join Us This Lent </p>
+          <div className="flex text-textColor3 py-[5rem] lg:w-[80%] m-auto max-lg:flex-col-reverse ">
+            <div className=" w-[60%] max-lg:w-[100%]  ">
+              <div className=" text-[1.2rem] px-[2rem] m-auto max-lg:md:text-[1.5rem] ">
+                <p className=" text-textColor font-mulish font-extrabold text-[2.8rem] ">
+                  Join Us This Lent{" "}
+                </p>
                 <p>
                   We&apos;re running a lent course, starting on Tuesday 13th
                   February, and we&apos;d love you to join us. <br /> <br />
                   <span>There are two opportunities to join in</span>
                 </p>
                 <p>
-                Whichever suits you best, we hope to see you there! Please contact Jo for zoom details or more information.
+                  Whichever suits you best, we hope to see you there! Please
+                  contact Jo for zoom details or more information.
                 </p>
+                <br />
+                <ButtonA
+                  text="Contact Us"
+                  bgcolor={1}
+                  txcolor={0}
+                  onClick={() => {}}
+                  classN=" border-primaryColor border  text-backgroundColor bg-primaryColor "
+                />
               </div>
-              <ButtonA text="Contact Us" bgcolor={1} txcolor={0} onClick={()=>{}} classN=" border-primaryColor border  text-backgroundColor bg-primaryColor " />
             </div>
-            <div></div>
+            <div className=" w-[40%] max-lg:w-[100%] max-lg:py-8 ">
+              <Image
+                className="w-full h-full rounded-lg "
+                src={"/images/cross.jpg"}
+                alt=""
+                width={700}
+                height={700}
+                quality={100}
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ============= Upcoming Events ============= */}
+      <section className=" bg-primaryColor text-backgroundColor ">
+        <div className="container m-auto ">
+          <div className="">
+            <div className=" flex justify-between font-tegomin items-center py-10 ">
+              <div className=" font-tegomin text-[2.5rem] font-extrabold  ">
+                Upcoming Events
+              </div>
+              <div>
+                {/* ============== Arrow button for carousel ================== */}
+                <div className="flex flex-row mx-auto">
+                  <button
+                    type="button"
+                    className="bg-gray-800 text-white rounded-l-md border-r border-gray-100 py-2 hover:bg-red-700 hover:text-white px-3 group hover:bg-backgroundColor hover:text-primaryColor"
+                  >
+                    <div className="flex flex-row align-middle justify-center items-center ">
+                      <p className=" !text-backgroundColor ">
+                        <RiArrowLeftSLine className=" text-[2rem] group-hover:!bg-primaryColor rounded-full " />
+                      </p>
+                      <p className="ml-2">Prev</p>
+                    </div>
+                  </button>
+                  <button
+                    type="button"
+                    className=" group hover:bg-backgroundColor bg-gray-800 text-white rounded-r-md py-2 border-l border-gray-200 hover:bg-red-700 px-3 hover:text-primaryColor "
+                  >
+                    <div className="flex flex-row align-middle justify-center items-center">
+                      <span className="mr-2">Next</span>
+
+                      <RiArrowRightSLine className=" text-[2rem] group-hover:!bg-primaryColor rounded-full " />
+                    </div>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div className="">
+              <div className=" m-auto ">
+                <div className=" max-w-[366px] ">
+                  <Image
+                    className="w-full h-full rounded-lg "
+                    src={"/images/homecaroimg1.png"}
+                    alt="homecaroimg1"
+                    width={700}
+                    height={700}
+                    quality={100}
+                  />
+                </div>
+                <div className=" text-[.73rem] space-y-2 font-mulish my-4 ">
+                  <p className=" text-[1.09rem] mx-2 ">Trust in the lord with all your love</p>
+                  <p className="  flex items-center ">
+                    <BiCalendarAlt className=" mx-2 text-[1.2rem]  " /> Monday 20 April 2021 - Tuesday 21 April
+                    2021
+                  </p>
+                  <p className=" flex items-center ">
+                    <FaLocationDot className=" mx-2 text-[1.2rem]  " /> Gotham Fan 221b , New York{" "}
+                  </p>
+                </div>
+              </div>
+              <ButtonB
+                text=" Click me now "
+                txcolor={1}
+                bgcolor={0}
+                classN=" w-auto "
+                hrefA=""
+                onClick={() => {}}
+              />
+            </div>
           </div>
         </div>
       </section>
