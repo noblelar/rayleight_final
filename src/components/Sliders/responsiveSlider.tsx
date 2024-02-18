@@ -41,7 +41,7 @@ function ResponsiveSlick({ next, previous }: { next: any; previous: any }) {
   };
 
   var settings = {
-    className: " ",
+    className: " !-z-0 ",
     dots: true,
     centerMode: true,
     infinite: true,

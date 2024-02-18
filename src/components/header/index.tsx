@@ -9,7 +9,7 @@ import Search from "../buttons/search";
 
 const Header = () => {
   return (
-    <header className={`!sticky !-top-1 bg-backgroundColor `}>
+    <header className={`!sticky !-top-1 bg-backgroundColor z-30 `}>
       <div className="w-full shadow-lg">
         <div className=" container m-auto ">
           <div className=" w-full flex justify-between ">
