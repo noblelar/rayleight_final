@@ -31,13 +31,17 @@ const caroItems = [
 ];
 
 function ResponsiveSlick({ next, previous }: { next: any; previous: any }) {
-  let sliderRef = useRef();
+  let sliderRef = useRef<HTMLDivElement>(null);
 
   const next1 = () => {
-    sliderRef.current.slickNext();
+    if (sliderRef.current) {
+      sliderRef.current.slickNext();
+    }
   };
   const previous2 = () => {
-    sliderRef.current.slickPrev();
+    if (sliderRef.current) {
+      sliderRef.current.slickPrev();
+    }
   };
 
   var settings = {
