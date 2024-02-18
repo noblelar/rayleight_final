@@ -30,22 +30,27 @@ const caroItems = [
   },
 ];
 
+// (document.getElementsByName(elementId) as HTMLInputElement).value;
+
+
 function ResponsiveSlick({ next, previous }: { next: any; previous: any }) {
-  let sliderRef = useRef<HTMLDivElement>(null);
+  
+  let sliderRef = useRef(null);
 
   const next1 = () => {
     if (sliderRef.current) {
-      sliderRef.current.slickNext();
+      sliderRef.current.slickNext(); 
     }
   };
   const previous2 = () => {
     if (sliderRef.current) {
-      sliderRef.current.slickPrev();
+      sliderRef.current.slickPrev(); 
     }
   };
 
   var settings = {
     className: " !-z-0 ",
+    
     dots: true,
     centerMode: true,
     infinite: true,
