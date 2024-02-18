@@ -37,5 +37,8 @@ body {
   }
 }
 
-
+.slick-active a p {
+  border: white solid 2px;
+  background: #cd0e2d;
+}
 

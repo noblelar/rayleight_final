@@ -1,13 +1,25 @@
-import React from "react";
+import React, { useState } from "react";
 import ButtonA from "../buttons/ind";
 import Image from "next/image";
 import { RiArrowLeftSLine, RiArrowRightSLine } from "react-icons/ri";
-import { BiCalendarAlt } from "react-icons/bi";
-import { FaLocationDot } from "react-icons/fa6";
+
 import ColorChangeButton from "../buttons/ccbbutton";
 import ButtonB from "../buttons/ccbbutton";
+import HomeCard from "../cards/homeCard";
+import ResponsiveSlick from "../Sliders/responsiveSlider";
+
+const handleNext = () => {
+  return onclick;
+};
+const handlePrev = () => {
+  return onclick;
+};
 
 const Homepage = () => {
+
+  const [next, setNext] = useState(false);
+  const [prev, setPrev] = useState(false);
+
   return (
     <div className={``}>
       {/* ============= Hero Image ============= */}
@@ -148,18 +160,19 @@ const Homepage = () => {
 
       {/* ============= Upcoming Events ============= */}
       <section className=" bg-primaryColor text-backgroundColor ">
-        <div className="container m-auto ">
-          <div className="">
-            <div className=" flex justify-between font-tegomin items-center py-10 ">
-              <div className=" font-tegomin text-[2.5rem] font-extrabold  ">
+        <div className="container m-auto overflow-hidden ">
+          <div className=" py-[5rem] ">
+            {/* <div className=" flex justify-between font-tegomin items-center pb-10 ">
+              <div className=" font-tegomin text-[2.5rem] font-extrabold max-md:text-[1.8rem] max-md:ml-4  ">
                 Upcoming Events
               </div>
               <div>
-                {/* ============== Arrow button for carousel ================== */}
-                <div className="flex flex-row mx-auto">
+                ============== Arrow button for carousel ==================
+                <div className="flex flex-row mx-auto max-md:scale-75 ">
                   <button
                     type="button"
                     className="bg-gray-800 text-white rounded-l-md border-r border-gray-100 py-2 hover:bg-red-700 hover:text-white px-3 group hover:bg-backgroundColor hover:text-primaryColor"
+                    onClick={handlePrev}
                   >
                     <div className="flex flex-row align-middle justify-center items-center ">
                       <p className=" !text-backgroundColor ">
@@ -171,6 +184,7 @@ const Homepage = () => {
                   <button
                     type="button"
                     className=" group hover:bg-backgroundColor bg-gray-800 text-white rounded-r-md py-2 border-l border-gray-200 hover:bg-red-700 px-3 hover:text-primaryColor "
+                    onClick={handleNext}
                   >
                     <div className="flex flex-row align-middle justify-center items-center">
                       <span className="mr-2">Next</span>
@@ -180,38 +194,19 @@ const Homepage = () => {
                   </button>
                 </div>
               </div>
-            </div>
+            </div> */}
             <div className="">
-              <div className=" m-auto ">
-                <div className=" max-w-[366px] ">
-                  <Image
-                    className="w-full h-full rounded-lg "
-                    src={"/images/homecaroimg1.png"}
-                    alt="homecaroimg1"
-                    width={700}
-                    height={700}
-                    quality={100}
-                  />
-                </div>
-                <div className=" text-[.73rem] space-y-2 font-mulish my-4 ">
-                  <p className=" text-[1.09rem] mx-2 ">Trust in the lord with all your love</p>
-                  <p className="  flex items-center ">
-                    <BiCalendarAlt className=" mx-2 text-[1.2rem]  " /> Monday 20 April 2021 - Tuesday 21 April
-                    2021
-                  </p>
-                  <p className=" flex items-center ">
-                    <FaLocationDot className=" mx-2 text-[1.2rem]  " /> Gotham Fan 221b , New York{" "}
-                  </p>
-                </div>
+              <div className=" m-auto  ">
+                <ResponsiveSlick next={handleNext} previous={handlePrev} />
               </div>
-              <ButtonB
+              {/* <ButtonB
                 text=" Click me now "
                 txcolor={1}
                 bgcolor={0}
                 classN=" w-auto "
                 hrefA=""
                 onClick={() => {}}
-              />
+              /> */}
             </div>
           </div>
         </div>
