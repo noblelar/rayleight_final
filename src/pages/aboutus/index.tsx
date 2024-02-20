@@ -68,6 +68,10 @@ const tabViews = {
 const AboutUs = () => {
   const router = useRouter();
   const currentTab = (router.query.tab as keyof typeof tabViews) ?? "aboutus";
+  const currentTabPath =
+    currentTab !== "aboutus"
+      ? router.pathname + "?tab=" + currentTab
+      : router.pathname;
 
   const tabView = tabViews[currentTab] ?? tabViews["aboutus"];
 
@@ -81,25 +85,24 @@ const AboutUs = () => {
 
       <section className="container mx-auto px-4">
         <ul className="flex items-center gap-4 md:justify-center my-10 overflow-auto pb-3 *:shrink-0">
-          {router.isReady &&
-            tabList.map((t) => {
-              const isActive = t.path === router.asPath;
+          {tabList.map((t) => {
+            const isActive = t.path === currentTabPath;
 
-              return (
-                <li key={t.id}>
-                  <Link
-                    href={t.path}
-                    className={buttonVariants({
-                      variant: isActive ? "default" : "outline",
-                      className: "uppercase",
-                    })}
-                    scroll={false}
-                  >
-                    {t.label}
-                  </Link>
-                </li>
-              );
-            })}
+            return (
+              <li key={t.id}>
+                <Link
+                  href={t.path}
+                  className={buttonVariants({
+                    variant: isActive ? "default" : "outline",
+                    className: "uppercase",
+                  })}
+                  scroll={false}
+                >
+                  {t.label}
+                </Link>
+              </li>
+            );
+          })}
         </ul>
 
         <div>{<tabView.component />}</div>

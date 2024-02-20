@@ -12,31 +12,25 @@ const Header = () => {
   return (
     <header className={`!sticky !-top-1 bg-backgroundColor z-30 `}>
       <div className="w-full shadow-lg">
-        <div className=" container m-auto">
-          <div className=" w-full flex justify-between ">
+        <div className=" lg:container xl:max-w-[1240px]  2xl:container m-auto">
+          <div className=" w-full flex justify-between gap-6">
             {/* ========Logo Area ====== */}
             <div className="flex items-center justify-center font-opensans">
-              <Link href={"/"}>
-                <div className="flex items-start justify-center lg:min-w-[300px] ">
-                  <div className=" w-[70px] md:w-[90px] my-auto ">
-                    <Image
-                      className="pt-2 "
-                      src={"/images/logored.svg"}
-                      alt=""
-                      width={120}
-                      height={120}
-                      quality={100}
-                    />
-                  </div>
-
-                  <div className=" my-auto pt-4 text-left md:leading-7 leading-tight text-primaryColor font-mulish font-medium text-[1.5rem] max-md:text-[1.1rem] ">
-                    <p className=" m-0 p-0 ">Rayleigh</p>
-                    <p className=" font-semibold m-0 p-0 ">Methodist</p>
-                    <p className=" m-0 p-0 ">Church</p>
-                  </div>
-                  {/* <div className="font-bold items-center px-2 font-playfair text-[1.2rem] text-primaryColor m-auto md:max-lg:text-[2rem] ">
-                    Rayleigh Methodist Church
-                  </div> */}
+              <Link
+                href={"/"}
+                className="inline-flex items-start justify-center"
+              >
+                <div>
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  <img
+                    // className="pt-2"
+                    className="max-h-[57px]"
+                    src={"/images/rmc-logo.png"}
+                    alt=""
+                    // width={230}
+                    // height={57}
+                    // quality={100}
+                  />
                 </div>
               </Link>
             </div>
