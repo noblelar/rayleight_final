@@ -20,7 +20,7 @@ export const menuItems: IMenuItem[] = [
   {
     id: "aboutus",
     label: "About Us",
-    path: "/aboutus",
+    path: "/aboutus?tab=aboutus",
     submenu: [],
     submenuof: "",
   },

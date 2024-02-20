@@ -1,6 +1,6 @@
+import { AboutPage } from "@/components/aboutus/about";
 import { HistoryPage } from "@/components/aboutus/history";
-import ButtonB from "@/components/buttons/ccbbutton";
-import Button from "@/components/buttons/submit";
+import { LocationPage } from "@/components/aboutus/location";
 import { Hero } from "@/components/hero";
 import { buttonVariants } from "@/components/ui/button";
 import { menuItems } from "@/components/utils";
@@ -20,7 +20,7 @@ const tabViews = {
       title: "About us",
       imageUrl: "/images/about-img.jpeg",
     },
-    component: () => <div>About Us</div>,
+    component: () => <AboutPage />,
   },
 
   weddings: {
@@ -36,7 +36,7 @@ const tabViews = {
       title: "Location",
       imageUrl: "/images/location-img.jpeg",
     },
-    component: () => <div>Location</div>,
+    component: () => <LocationPage />,
   },
 
   funerals: {
@@ -75,6 +75,7 @@ const AboutUs = () => {
       <Hero
         backgroundImage={tabView.header.imageUrl}
         title={tabView.header.title}
+        sectionClassName="bg-center"
       />
 
       <section className="container mx-auto px-4">
