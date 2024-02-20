@@ -1,21 +1,21 @@
-// 
+//
 import { motion, transform, useMotionTemplate } from "framer-motion";
 import Link from "next/link";
 import React from "react";
 
-function ButtonA({
+function ButtonB({
   text,
   bgcolor,
   txcolor,
   onClick,
-  classN,
+  // classN,
   hrefA,
 }: {
   text: string;
   bgcolor: number;
   txcolor: number;
   onClick: () => void;
-  classN: string;
+  // classN: string;
   hrefA?: string;
 }) {
   const trans = [
@@ -27,17 +27,19 @@ function ButtonA({
   const colorA = transform([0, 100], trans[txcolor])(100);
 
   return (
-    <Link href={hrefA ? hrefA : "/home"}>
+    <Link
+      href={hrefA ? hrefA : "/home"}
+      className=" color-change-animation color-change-button "
+    >
       <motion.div
         whileHover={{
           scale: 1.1,
           backgroundColor: backgroundColor,
           color: colorA,
-          
         }}
         whileTap={{ scale: 0.8 }}
         //  type="submit"
-        className={`rounded-md bg-${""} py-4 px-6 text-center text-base font-medium transition duration-300 ease-in-out hover:shadow-signUp max-w-[140px] ${classN} lg:max-xl:text-[0.8rem] lg:max-lg:px-0 `}
+        className={`rounded-md bg-${""}  py-4 px-6 text-center text-base font-medium transition duration-300 ease-in-out hover:shadow-signUp max-w-[140px] ${""} lg:max-xl:text-[0.8rem] lg:max-lg:px-0 text-primaryColo `}
         onClick={onClick}
       >
         {text}
@@ -46,7 +48,4 @@ function ButtonA({
   );
 }
 
-export default ButtonA;
-
-
-
+export default ButtonB;

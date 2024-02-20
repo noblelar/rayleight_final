@@ -16,7 +16,7 @@ export const menuItems: IMenuItem[] = [
   //   submenu: [],
   //   submenuof: "",
   // },
- 
+
   {
     id: "aboutus",
     label: "About Us",
@@ -81,7 +81,9 @@ export const menuItems: IMenuItem[] = [
   {
     id: "history",
     label: "History",
-    path: "/history",
+    // path: "/history",
+    // path: "/aboutus/history",
+    path: "/aboutus?tab=history",
     submenu: [],
     submenuof: "aboutus",
   },
@@ -93,7 +95,7 @@ export const menuItems: IMenuItem[] = [
     submenu: [],
     submenuof: "services",
   },
-  
+
   // {
   //   id: "holycommunion",
   //   label: "Holy Communion",
@@ -103,18 +105,26 @@ export const menuItems: IMenuItem[] = [
   // },
 
   {
+    id: "location",
+    label: "Location",
+    path: "/location",
+    submenu: [],
+    submenuof: "aboutus",
+  },
+
+  {
     id: "weddings",
     label: "Weddings",
     path: "/weddings",
     submenu: [],
-    submenuof: "services",
+    submenuof: "aboutus",
   },
   {
     id: "funerals",
     label: "Funerals & Bereavement",
     path: "/funerals",
     submenu: [],
-    submenuof: "services",
+    submenuof: "aboutus",
   },
   {
     id: "childrensessions",

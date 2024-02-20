@@ -32,25 +32,23 @@ const caroItems = [
 
 // (document.getElementsByName(elementId) as HTMLInputElement).value;
 
-
 function ResponsiveSlick({ next, previous }: { next: any; previous: any }) {
-  
   let sliderRef = useRef(null);
 
   const next1 = () => {
-    if (sliderRef.current) {
-      sliderRef.current.slickNext(); 
+    if (sliderRef) {
+      (sliderRef as unknown as Slider).slickNext();
     }
   };
   const previous2 = () => {
-    if (sliderRef.current) {
-      sliderRef.current.slickPrev(); 
+    if (sliderRef) {
+      (sliderRef as unknown as Slider).slickPrev();
     }
   };
 
   var settings = {
     className: " !-z-0 ",
-    
+
     dots: true,
     centerMode: true,
     infinite: true,
@@ -107,7 +105,7 @@ function ResponsiveSlick({ next, previous }: { next: any; previous: any }) {
           <div className="flex flex-row mx-auto max-md:scale-75 max-md:hidden ">
             <button
               type="button"
-              className="bg-gray-800 text-white rounded-l-md border-r border-gray-100 py-2 hover:bg-red-700 hover:text-white px-3 group hover:bg-backgroundColor hover:text-primaryColor"
+              className=" text-white rounded-l-md border-r border-gray-100 py-2 hover:bg-red-700 hover:text-white px-3 group hover:bg-backgroundColor hover:text-primaryColor"
               onClick={previous2}
             >
               <div className="flex flex-row align-middle justify-center items-center ">
@@ -119,7 +117,7 @@ function ResponsiveSlick({ next, previous }: { next: any; previous: any }) {
             </button>
             <button
               type="button"
-              className=" group hover:bg-backgroundColor bg-gray-800 text-white rounded-r-md py-2 border-l border-gray-200 hover:bg-red-700 px-3 hover:text-primaryColor "
+              className=" group hover:bg-backgroundColor  text-white rounded-r-md py-2 border-l border-gray-200 hover:bg-red-700 px-3 hover:text-primaryColor "
               onClick={next1}
             >
               <div className="flex flex-row align-middle justify-center items-center">
@@ -131,7 +129,13 @@ function ResponsiveSlick({ next, previous }: { next: any; previous: any }) {
           </div>
         </div>
       </div>
-      <Slider ref={sliderRef} {...settings}>
+      <Slider
+        ref={(slider) => {
+          // @ts-ignore
+          sliderRef = slider;
+        }}
+        {...settings}
+      >
         {caroItems.map((item, e) => (
           <HomeCard
             key={e}

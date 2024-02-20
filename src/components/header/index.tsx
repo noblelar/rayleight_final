@@ -11,7 +11,7 @@ const Header = () => {
   return (
     <header className={`!sticky !-top-1 bg-backgroundColor z-30 `}>
       <div className="w-full shadow-lg">
-        <div className=" container m-auto ">
+        <div className=" container m-auto">
           <div className=" w-full flex justify-between ">
             {/* ========Logo Area ====== */}
             <div className="flex items-center justify-center font-opensans">
@@ -38,7 +38,6 @@ const Header = () => {
                   </div> */}
                 </div>
               </Link>
-             
             </div>
 
             {/* ========== Desktop Nav Area ============= */}
@@ -77,12 +76,12 @@ const Header = () => {
                 onClick={() => {}}
                 classN="border-primaryColor border text-backgroundColor bg-primaryColor "
               />
-              <Search/>
+              <Search />
             </div>
 
             {/* ================ Mobile Nav Button ============= */}
             <div className=" lg:hidden flex justify-center z-30 my-auto mr-4 space-x-4 md:space-x-8 ">
-              <Search/>
+              <Search />
               <App />
             </div>
           </div>

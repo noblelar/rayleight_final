@@ -14,17 +14,18 @@ const config: Config = {
       mulish: ["Mulish", "sans-serif"],
       tegomin: ["New Tegomin", "serif"],
     },
-    colors: {
-      primaryColor: "#cd0e2d",
-      backgroundColor: "#fff",
-      textColor: "#000",
-      textColor1: "#BEBEBE",
-      textColor2: "#2E3133",
-      textColor3: "#92929D",
-      textColor4: "#585757",
-      footer: "#BDBDBD",
-    },
     extend: {
+      colors: {
+        primaryColor: "#cd0e2d",
+        backgroundColor: "#fff",
+        muted: "#6A6A74",
+        textColor: "#000",
+        textColor1: "#BEBEBE",
+        textColor2: "#2E3133",
+        textColor3: "#92929D",
+        textColor4: "#585757",
+        footer: "#BDBDBD",
+      },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":

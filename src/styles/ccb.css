@@ -1,41 +1,30 @@
-.color-change-button {
+/* Break */
+.outline-animation {
   position: relative;
-  color: #cd0e2d;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
   overflow: hidden;
-  border: #cd0e2d solid 1px;
 }
-
-.color-change-animation {
+.outline-animation:hover {
+  color: #fff;
+}
+.outline-animation::after {
+  content: "";
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 0;
-  height: 100%;
-  background: radial-gradient(circle at left, #cd0e2d 0%, #cd0e2d 30%, transparent 40%);
-  animation: expandGradient 2s forwards; /* Radial gradient expand animation */
+  bottom: -10px;
+  width: 120%;
+
+  height: 0;
+  rotate: -5deg;
+  clip-path: ellipse(50% 23% at 50% 50%);
+  transition: all 1.2s ease-in-out;
+
+  clip-path: ellipse(50% 23% at 50% 50%);
   z-index: -1; /* Ensure the animation is behind the button content */
-  color: white;
 }
 
-@keyframes expandGradient {
-  from {
-    width: 0;
-  }
-  to {
-    width: 400%; /* Ensure the gradient fully covers the button */
-  }
-}
-
-.color-change-button.hovered .color-change-animation {
-  background: radial-gradient(circle at left, #cd0e2d 0%, #cd0e2d 30%, transparent 40%);
-  color: white;
-}
-
-.color-change-button:hover .color-change-animation {
-  background: radial-gradient(circle at left, #cd0e2d 0%, #cd0e2d 30%, transparent 40%);
-  color: white;
+.outline-animation:hover::after {
+  height: 150%; /* Ensure the gradient fully covers the button */
+  rotate: 0deg;
+  clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 0);
+  background: radial-gradient(circle at left, #cd0e2d 0%, #cd0e2d 30%);
+  transition: all 1.2s ease-in-out;
 }
