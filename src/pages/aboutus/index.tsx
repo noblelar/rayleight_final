@@ -78,7 +78,7 @@ const AboutUs = () => {
       />
 
       <section className="container mx-auto px-4">
-        <ul className="flex items-center gap-4 justify-center my-10">
+        <ul className="flex items-center gap-4 md:justify-center my-10 overflow-auto pb-3 *:shrink-0">
           {router.isReady &&
             tabList.map((t) => {
               const isActive = t.path === router.asPath;
