@@ -107,7 +107,7 @@ export const menuItems: IMenuItem[] = [
   {
     id: "location",
     label: "Location",
-    path: "/location",
+    path: "/aboutus?tab=location",
     submenu: [],
     submenuof: "aboutus",
   },
@@ -115,14 +115,23 @@ export const menuItems: IMenuItem[] = [
   {
     id: "weddings",
     label: "Weddings",
-    path: "/weddings",
+    path: "/aboutus?tab=weddings",
     submenu: [],
     submenuof: "aboutus",
   },
+
+  {
+    id: "baptism",
+    label: "Baptism",
+    path: "/aboutus?tab=baptism",
+    submenu: [],
+    submenuof: "aboutus",
+  },
+
   {
     id: "funerals",
     label: "Funerals & Bereavement",
-    path: "/funerals",
+    path: "/aboutus?tab=funerals",
     submenu: [],
     submenuof: "aboutus",
   },
