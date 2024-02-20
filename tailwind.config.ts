@@ -15,8 +15,17 @@ const config: Config = {
       tegomin: ["New Tegomin", "serif"],
     },
     extend: {
+      container: {
+        // center: true,
+        // padding: "2rem",
+        screens: {
+          xl: "1024px",
+          "2xl": "1400px",
+        },
+      },
       colors: {
         primaryColor: "#cd0e2d",
+        // foreground: "#232526",
         backgroundColor: "#fff",
         muted: "#6A6A74",
         textColor: "#000",
@@ -33,6 +42,6 @@ const config: Config = {
       },
     },
   },
-  plugins: [],
+  plugins: [require("@tailwindcss/typography")],
 };
 export default config;
