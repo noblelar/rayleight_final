@@ -12,7 +12,7 @@ const Header = () => {
   return (
     <header className={`!sticky !-top-1 bg-backgroundColor z-30 `}>
       <div className="w-full shadow-lg">
-        <div className=" lg:container xl:max-w-[1240px]  2xl:container m-auto">
+        <div className=" md:container lg:max-w-[1240px] lg:px-4  2xl:container m-auto">
           <div className=" w-full flex justify-between gap-6">
             {/* ========Logo Area ====== */}
             <div className="flex items-center justify-center font-opensans">
