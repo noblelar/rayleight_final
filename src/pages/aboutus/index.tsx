@@ -1,6 +1,7 @@
 import { AboutPage } from "@/components/aboutus/about";
 import { HistoryPage } from "@/components/aboutus/history";
 import { LocationPage } from "@/components/aboutus/location";
+import { WeddingsPage } from "@/components/aboutus/weddings";
 import { Hero } from "@/components/hero";
 import { buttonVariants } from "@/components/ui/button";
 import { menuItems } from "@/components/utils";
@@ -28,7 +29,7 @@ const tabViews = {
       title: "Weddings",
       imageUrl: "/images/wedding-img.jpeg",
     },
-    component: () => <div>Wedding</div>,
+    component: () => <WeddingsPage />,
   },
 
   location: {
