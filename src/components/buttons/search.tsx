@@ -11,12 +11,14 @@ const Search = () => {
   function addClass() {
     if (seeSearch) {
       return "absolute";
-    }else{ return 'hidden'}
+    } else {
+      return "hidden";
+    }
   }
 
   return (
-    <div className=" flex bg-primaryColor border-2 rounded-full items-end justify-end ">
-      <form className=" m-auto flex justify-center  ">
+    <div className=" flex bg-primaryColor border-2 rounded-full items-end justify-end  ">
+      <form className=" m-auto flex justify-center">
         <input
           type="search"
           name="search"
@@ -27,11 +29,10 @@ const Search = () => {
         <label
           htmlFor="search"
           onClick={setSearch}
-          className="m-auto h-[100%] cursor-pointer"
+          className="mx-auto size-10 flex items-center justify-center cursor-pointer "
         >
-          <RiSearch2Line className=" text-[2rem] mx-2 text-backgroundColor bg-primaryColor" />
+          <RiSearch2Line className="text-[1.2rem]  text-backgroundColor bg-primaryColor" />
         </label>
-        
       </form>
     </div>
   );

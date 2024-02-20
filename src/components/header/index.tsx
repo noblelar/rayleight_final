@@ -6,6 +6,7 @@ import { menuItems } from "../utils";
 import NavBut from "./navigation/navbut";
 import App from "./mobilenav/app";
 import Search from "../buttons/search";
+import { buttonVariants } from "../ui/button";
 
 const Header = () => {
   return (
@@ -61,26 +62,32 @@ const Header = () => {
             </div>
 
             {/* ========= Buttons Area ============ */}
-            <div className=" max-lg:hidden flex space-x-8 justify-center m-auto mr-0">
-              <ButtonA
-                text="Hall Hire?"
-                bgcolor={0}
-                txcolor={1}
-                onClick={() => {}}
-                classN="border-primaryColor border  text-primaryColor "
-              />
-              <ButtonA
-                text="New Here?"
-                bgcolor={1}
-                txcolor={0}
-                onClick={() => {}}
-                classN="border-primaryColor border text-backgroundColor bg-primaryColor "
-              />
-              <Search />
+            <div className=" max-lg:hidden flex space-x-4 justify-center items-center m-auto mr-0">
+              <Link
+                href={"/hall-hire"}
+                className={buttonVariants({
+                  size: "2xl",
+                  variant: "outline",
+                  className: "border-primaryColor text-primaryColor",
+                })}
+              >
+                Hall Hire
+              </Link>
+
+              <Link
+                href={"/new-here"}
+                className={buttonVariants({ size: "2xl" })}
+              >
+                New Here?
+              </Link>
+
+              <div className="self-center">
+                <Search />
+              </div>
             </div>
 
             {/* ================ Mobile Nav Button ============= */}
-            <div className=" lg:hidden flex justify-center z-30 my-auto mr-4 space-x-4 md:space-x-8 ">
+            <div className=" lg:hidden flex justify-center items-center z-30 my-auto mr-4 space-x-4 md:space-x-8 ">
               <Search />
               <App />
             </div>
