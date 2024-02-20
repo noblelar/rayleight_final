@@ -7,6 +7,9 @@ import ColorChangeButton from "../buttons/ccbbutton";
 import ButtonB from "../buttons/ccbbutton";
 import HomeCard from "../cards/homeCard";
 import ResponsiveSlick from "../Sliders/responsiveSlider";
+import { Hero } from "../hero";
+import Link from "next/link";
+import { buttonVariants } from "../ui/button";
 
 const handleNext = () => {
   return onclick;
@@ -16,16 +19,15 @@ const handlePrev = () => {
 };
 
 const Homepage = () => {
-
   const [next, setNext] = useState(false);
   const [prev, setPrev] = useState(false);
 
   return (
     <div className={``}>
       {/* ============= Hero Image ============= */}
-      <section
+      {/* <section
         data-theme="black"
-        className=" bg-[url('/images/church_img.png')] xl:h-[100vh] h-[90vh] w-full bg-cover  top-0 -z-20 bg-no-repeat -mt-[8rem] "
+        className=" bg-[url('/images/church_img.png')] xl:h-[100vh] h-[90vh] w-full bg-cover  top-0 -z-20 bg-no-repeat"
       >
         <div className=" flex justify-center justify-items-center h-[100%] w-[] ">
           <div className=" m-auto text-backgroundColor font-mulish font-extrabold text-[3rem] max-lg:w-[80%]   ">
@@ -33,42 +35,53 @@ const Homepage = () => {
             Welcome to Rayleigh Methodist Church{" "}
           </div>
         </div>
-      </section>
+      </section> */}
+      <Hero
+        backgroundImage="/images/church_img.png"
+        title="Welcome to Rayleigh Methodist Church"
+        containerClassName="xl:h-[100vh] h-[90vh]"
+      />
 
       {/* ============= Mission Area ========= */}
       <section className=" ">
-        <div className="container m-auto text-center max-md:px-2">
+        <div className="container mx-auto text-center max-md:px-2">
           <div className=" my-[3.5rem] lg:my-[6rem] ">
-            <div className=" m-auto lg:max-w-[80%] font-mulish font-extrabold text-[2.5rem] leading-10 max-md:text-[1.6rem] max-md:leading-6 ">
+            <div className=" m-auto lg:max-w-[90%] text-primaryColor font-extrabold text-[2.5rem] leading-10 max-md:text-[1.6rem] max-md:leading-6 ">
               The mission of Rayleigh Methodist Church is to celebrate the
               reality of God and proclaim the kingdom of God to all people
             </div>
-            <div className=" m-auto lg:max-w-[70%] text-textColor2 text-[1.4rem] pt-[2rem] max-lg:text-justify ">
+            <div className=" m-auto lg:max-w-[80%] text-textColor2 text-[1.4rem] pt-[2rem] max-lg:text-justify ">
               <h1 className=" pb-[2rem] text-primaryColor max-lg:!text-center ">
                 Aims to fulfill this mission are :
               </h1>
-              To encourage and support the growth in faith of all To establish
-              an atmosphere in which everyone is valued and feels that they have
-              a contribution to make To support and encourage witness within the
-              wider community To provide a wider vision of Methodism,
-              ecumenical, national and international
+              <p>
+                {" "}
+                To encourage and support the growth in faith of all To establish
+                an atmosphere in which everyone is valued and feels that they
+                have a contribution to make To support and encourage witness
+                within the wider community To provide a wider vision of
+                Methodism, ecumenical, national and international
+              </p>
             </div>
           </div>
         </div>
       </section>
 
       {/* ============ A Place Area ========== */}
-      <section className=" bg-primaryColor ">
-        <div className="container mx-auto text-backgroundColor bg-primaryColor">
-          <div className=" w-full flex py-8 lg:space-x-8 max-lg:flex-col ">
-            <div className="w-[60%] mx-auto max-lg:w-[100%] ">
-              {/* <iframe
+      <section className=" bg-primaryColor text-backgroundColor">
+        <div className="max-w-screen-2xl mx-auto">
+          {/* <div className=" w-full flex py-8 lg:space-x-8 max-lg:flex-col "> */}
+          {/* <div className="w-[60%] mx-auto max-lg:w-[100%] "> */}
+          {/* <iframe
                   className="embed-responsive-item"
                   src="https://www.youtube.com/watch?v=y89CQgdgrio"
                   allowFullScreen
                 ></iframe> */}
+          {/* </div> */}
+          <div className="w-full grid lg:grid-cols-[1.15fr_1fr]">
+            <div>
               <iframe
-                className=" rounded-lg h-full m-0 max-md:h-[60vh] max-lg:h-[50vh] "
+                className="h-full m-0 aspect-video"
                 width="100%"
                 height="100%"
                 src="https://www.youtube.com/embed/y89CQgdgrio"
@@ -78,12 +91,12 @@ const Homepage = () => {
                 allowFullScreen
               ></iframe>
             </div>
-            <div className=" w-[40%] max-lg:w-[100%] max-lg:pt-8 ">
-              <div className=" m-auto px-[1.5rem]  ">
-                <h3 className=" text-center font-playfair font-bold text-[2.3rem] ">
+            <div className="py-8">
+              <div className=" m-auto px-[1.5rem]  max-w-[50ch] text-center">
+                <h3 className=" text-center  font-bold text-2xl  md:text-3xl lg:text-4xl ">
                   A place to call home
                 </h3>
-                <ul className=" list-disc py-4 space-y-4 lg:text-[1.2rem] max-lg:text-[1.1rem] md:max-lg:text-[1.2rem] ">
+                <ul className=" list-disc py-4 space-y-4 md:text-sm lg:text-base">
                   <li>
                     We are a friendly church with arms wide open to our local
                     community. Whether you attend a group in our building, or
@@ -102,14 +115,16 @@ const Homepage = () => {
                     find out more here.
                   </li>
                 </ul>
-                <ButtonA
-                  text="Find out more"
-                  bgcolor={0}
-                  txcolor={1}
-                  onClick={() => {}}
-                  classN="border-backgroundColor border  text-primaryColor bg-backgroundColor "
-                  hrefA="/home"
-                />
+
+                <Link
+                  href={"/"}
+                  className={buttonVariants({
+                    variant: "secondary",
+                    size: "2xl",
+                  })}
+                >
+                  Find out more
+                </Link>
               </div>
             </div>
           </div>
@@ -197,7 +212,7 @@ const Homepage = () => {
             </div> */}
             <div className="">
               <div className=" m-auto  ">
-                <ResponsiveSlick next={handleNext} previous={handlePrev} />
+                <ResponsiveSlick />
               </div>
               {/* <ButtonB
                 text=" Click me now "

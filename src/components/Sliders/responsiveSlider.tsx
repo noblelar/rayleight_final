@@ -31,8 +31,8 @@ const caroItems = [
 ];
 
 // (document.getElementsByName(elementId) as HTMLInputElement).value;
-
-function ResponsiveSlick({ next, previous }: { next: any; previous: any }) {
+// { next, previous }: { next: any; previous: any }
+function ResponsiveSlick() {
   let sliderRef = useRef(null);
 
   const next1 = () => {
