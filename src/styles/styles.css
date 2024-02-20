@@ -19,22 +19,19 @@ body {
   margin: 0;
   padding: 0;
   /* background-color: var(--background); */
-  color: var(--accent);
+  /* color: var(--accent); */
   /* padding-bottom: 100px; */
   /* overflow: hidden; */
   min-height: 100vh;
 }
 
-
-
-* {
+/* this was causing issues */
+/* * {
   font-family: sofia-pro, sans-serif;
   font-weight: 400;
   font-style: normal;
   -webkit-font-smoothing: antialiased;
-}
-
-
+} */
 
 code {
   font-family: input-mono, monospace;
@@ -65,7 +62,7 @@ code {
   border-radius: 50%;
   background: var(--accent);
   margin: 0;
-} */ 
+} */
 
 .menu {
   position: fixed;
@@ -83,8 +80,7 @@ code {
 
 /*  */
 
-
-button.toggle_but{
+button.toggle_but {
   outline: none;
   border: none;
   -webkit-user-select: none;
@@ -104,4 +100,3 @@ button.toggle_but{
 button path {
   fill: var(--background);
 }
-
