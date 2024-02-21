@@ -2,6 +2,8 @@ import { Hero } from "@/components/hero";
 import React from "react";
 import Activities from "../activities";
 import ActivityItem from "@/components/new-here/activityitem";
+import ButtonB from "@/components/buttons/ccbbutton";
+import ButtonA from "@/components/buttons/ind";
 
 const activities = [
   {
@@ -35,8 +37,10 @@ const NewHere = () => {
   return (
     <div>
       <Hero title="Worship At RMC" backgroundImage={bgimage} />
+
+      {/* ========== Section With Activity Into ================= */}
       <section>
-        <div className=" container m-auto my-10 ">
+        <div className=" container m-auto my-[7rem] ">
           <div className=" text-center w-[80%] m-auto text-[1rem] max-lg:w-[95%] ">
             You are most welcome to join us for any of our regular services,
             just turn up and you will be welcomed at the door. There are
@@ -48,6 +52,7 @@ const NewHere = () => {
             and Braille are available)
           </div>
 
+          {/* ============= Sunday Activities ==============  */}
           <div className=" my-[5rem] grid grid-cols-3 m-auto max-lg:grid-cols-2 max-md:grid-cols-1 gap-8 ">
             {activities.map((activity, a) => {
               return (
@@ -59,6 +64,12 @@ const NewHere = () => {
               );
             })}
           </div>
+
+
+          <div className=" m-auto w-fit ">
+            <ButtonA text=" Become a Member " hrefA={"/events"} bgcolor={1} txcolor={0} onClick={() => { } } classN={" bg-primaryColor text-backgroundColor border border-primaryColor "}  />
+          </div>
+
         </div>
       </section>
     </div>

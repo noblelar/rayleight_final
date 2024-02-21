@@ -35,7 +35,7 @@ function ButtonA({
         }}
         whileTap={{ scale: 0.8 }}
         //  type="submit"
-        className={`rounded-md bg-${""} py-4 px-6 text-center text-base font-medium transition duration-300 ease-in-out hover:shadow-signUp max-w-[140px] ${classN} lg:max-xl:text-[0.8rem] lg:max-lg:px-0 `}
+        className={`rounded-md bg-${""} py-4 px-6 text-center text-base font-medium transition duration-300 ease-in-out hover:shadow-signUp max-w-fit ${classN} lg:max-xl:text-[0.8rem] lg:max-lg:px-0 `}
         onClick={onClick}
       >
         {text}
