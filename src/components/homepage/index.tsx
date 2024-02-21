@@ -10,6 +10,9 @@ import ResponsiveSlick from "../Sliders/responsiveSlider";
 import { Hero } from "../hero";
 import Link from "next/link";
 import { buttonVariants } from "../ui/button";
+import BlackButton from "../buttons/blackbut";
+import { IoMdPerson } from "react-icons/io";
+import { PiDevicesFill } from "react-icons/pi";
 
 const handleNext = () => {
   return onclick;
@@ -145,6 +148,22 @@ const Homepage = () => {
                   February, and we&apos;d love you to join us. <br /> <br />
                   <span>There are two opportunities to join in</span>
                 </p>
+                <div className=" py-4 flex justify-left md:space-x-6 max-md:space-y-6 max-md:flex-col  ">
+                  <BlackButton
+                    icon={<IoMdPerson className=" fill-black bg-black rounded-full w-6 h-6 p-1 " />}
+                    text={"In person "}
+                    onClick={() => {}}
+                    classN=""
+                    time="(3: 30PM) "
+                  />
+                  <BlackButton
+                    icon={<PiDevicesFill className=" fill-black bg-black rounded-full w-6 h-6 p-1 " />}
+                    text={"Online "}
+                    onClick={() => {}}
+                    classN=""
+                    time="(7: 30PM) "
+                  />
+                </div>
                 <p>
                   Whichever suits you best, we hope to see you there! Please
                   contact Jo for zoom details or more information.

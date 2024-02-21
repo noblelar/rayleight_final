@@ -105,19 +105,19 @@ function ResponsiveSlick() {
           <div className="flex flex-row mx-auto max-md:scale-75 max-md:hidden ">
             <button
               type="button"
-              className=" text-white rounded-l-md border-r border-gray-100 py-2 hover:bg-red-700 hover:text-white px-3 group hover:bg-backgroundColor hover:text-primaryColor"
+              className=" text-white rounded-l-md border-r border-gray-100 py-2 hover:bg-red-700 px-3 group hover:text-primaryColor"
               onClick={previous2}
             >
               <div className="flex flex-row align-middle justify-center items-center ">
                 <p className=" !text-backgroundColor ">
                   <RiArrowLeftSLine className=" text-[2rem] group-hover:!bg-primaryColor rounded-full " />
                 </p>
-                <p className="ml-2">Prev</p>
+                <p className="ml-2 text-white">Prev</p>
               </div>
             </button>
             <button
               type="button"
-              className=" group hover:bg-backgroundColor  text-white rounded-r-md py-2 border-l border-gray-200 hover:bg-red-700 px-3 hover:text-primaryColor "
+              className=" grou  text-white rounded-r-md py-2 border-l border-gray-200 hover:bg-red-700 px-3  "
               onClick={next1}
             >
               <div className="flex flex-row align-middle justify-center items-center">
