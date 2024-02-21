@@ -28,9 +28,11 @@ export function Hero({
           "container mx-auto px-4 flex items-center justify-center min-h-[446px] relative z-[1]",
           containerClassName
         )}
-      >
-        <h2>{title}</h2>
+      > 
+        <h2>{title}</h2> 
+        
       </div>
     </section>
   );
 }
+
